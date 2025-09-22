@@ -1,0 +1,15 @@
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\bin\Release\net6.0\Team2.exe
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\bin\Release\net6.0\Team2.deps.json
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\bin\Release\net6.0\Team2.runtimeconfig.json
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\bin\Release\net6.0\Team2.dll
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\bin\Release\net6.0\Team2.pdb
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\obj\Release\net6.0\Team2.csproj.AssemblyReference.cache
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\obj\Release\net6.0\Team2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\obj\Release\net6.0\Team2.AssemblyInfoInputs.cache
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\obj\Release\net6.0\Team2.AssemblyInfo.cs
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\obj\Release\net6.0\Team2.csproj.CoreCompileInputs.cache
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\obj\Release\net6.0\Team2.dll
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\obj\Release\net6.0\refint\Team2.dll
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\obj\Release\net6.0\Team2.pdb
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\obj\Release\net6.0\Team2.genruntimeconfig.cache
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\Team2\obj\Release\net6.0\ref\Team2.dll

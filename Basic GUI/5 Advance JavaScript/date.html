@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date in JS</title>
+</head>
+<body>
+    <script>
+        console.log('Creating date objects');
+        // Create object with current date and time
+        d = new Date()
+        console.log(d);
+
+        // Create object with milliseconds since January 1, 1970
+        console.log(new Date(1000000000000));
+
+        // Create object by parse date string
+        console.log(new Date('2025-08-03T12:20'));
+
+        // Create date object with specifying each field 
+        console.log(new Date(2025, 7, 3, 12, 20, 25, 5000));
+
+
+        console.log('Date methods');
+        // Returns the current timestamp in milliseconds.
+        console.log('Date.now() : ', Date.now());
+
+        // Parses a date string and returns the timestamp 
+        console.log('Date.parse() : ', Date.parse('2025-08-03'));
+
+        // Returns the timestamp in milliseconds for the UTC date
+        console.log('Date.UTC() : ', Date.UTC(2025,8,3));
+
+        // Returns the 4-digit year.
+        console.log('getFullYear() : ', d.getFullYear());
+
+        // Returns index of month (Starts with January of index 0)
+        console.log('getMonth() : ', d.getMonth());
+
+        // Returns the day of the month (1-31).
+        console.log('getDate() : ', d.getDate());
+
+        // Returns the day index of the week.
+        console.log('getDay() : ', d.getDay());
+
+        // Returns the time value in milliseconds since January 1, 1970.
+        console.log('getTime() : ', d.getTime());
+
+        // Returns the time zone difference from UTC in minutes.
+        console.log('getTimezoneOffset() : ', d.getTimezoneOffset());
+
+        // Sets year, month and day of month
+        console.log('setFullYear() : ', d.setFullYear(2020,10,10));
+
+        // Sets month and day of month
+        console.log('setMonth() : ', d.setMonth(11,10));
+
+        // Sets day of month
+        console.log('setDate() : ', d.setDate(20));
+
+        // Sets hours, minutes, seconds, and milliseconds
+        console.log('setHours() : ', d.setHours(1,1,1,100));
+
+        // Sets minutes, seconds, and milliseconds
+        console.log('setMinutes() : ', d.setMinutes(10,1,100));
+
+        // Sets seconds and milliseconds
+        console.log('setSeconds() : ', d.setSeconds(65,100));
+
+        // Sets milliseconds
+        console.log('setMilliseconds() : ', d.setMilliseconds(500));
+
+        // Returns full string representation in local time
+        console.log('toString() : ', d.toString());
+
+        // Returns ISO formatted string
+        console.log('toISOString() : ', d.toISOString());
+
+        // Returns a string formatted to UTC
+        console.log('toUTCString() : ', d.toUTCString());
+
+        // Returns a string representing the date portion 
+        console.log('toDateString() : ', d.toDateString());
+
+        // Returns a string representing the time portion 
+        console.log('toTimeString() : ', d.toTimeString());
+
+        // Returns a string representing the date in the same ISO format as toISOString()
+        console.log('toJSON() : ', d.toJSON());
+
+        // Converts a Date object to a string, using locale conventions
+        console.log('toLocaleString() : ', d.toLocaleString());
+
+        // Returns the date portion of a Date object as a string
+        console.log('toLocaleDateString() : ', d.toLocaleDateString());
+
+        // Returns the time portion of a Date object as a string
+        console.log('toLocaleTimeString() : ', d.toLocaleTimeString());
+
+        // Returns the number of milliseconds for this date since the January 1, 1970
+        console.log('valueOf() : ', d.valueOf());
+    </script>
+</body>
+</html>

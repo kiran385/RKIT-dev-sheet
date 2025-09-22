@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is Hostel Management System where owner of hostel can maintain records of students, rooms and fees">
+    <title>Basic GUI Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar bg-body-tertiary m-0 p-0">
+        <div class="container-fluid bg-dark">
+            <a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+            <span class="navbar-brand mb-0 mx-auto h1 text-light">Royal Care Hostel</span>
+            <i class="fa-solid fa-backward-step mx-3" id="backward" style="color: #ffffff; cursor: pointer;"></i>
+            <i class="fa-solid fa-forward-step" id="forward" style="color: #ffffff; cursor: pointer;"></i>
+        </div>
+    </nav>
+
+    <!-- Main container  -->
+    <div class="container my-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-2">
+            <div class="col">
+                <div class="card text-center bg-light">
+                    <div class="img-card">
+                        <img src="images/1.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Add New Student</h5>
+                        <!-- <a href="addStudent.html" class="btn btn-secondary" id="addStudent" title="Shortcut : A" role="button">Add</a> -->
+                        <button class="btn btn-secondary" id="addStudent" title="Shortcut : A">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-light">
+                    <div class="img-card">
+                        <img src="images/2.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Student List</h5>
+                        <!-- <a href="studentList.html" class="btn btn-secondary" role="button">View</a> -->
+                        <button class="btn btn-secondary" id="studentList">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-light">
+                    <div class="img-card">
+                        <img src="images/3.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Room List</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#roomListModal">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-light">
+                    <div class="img-card">
+                        <img src="images/4.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Fees Management</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#feesModal">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modals -->
+
+    <!-- Add Student Modal -->
+    <!-- <div class="modal fade" id="addStudentModal" tabindex="-1" aria-labelledby="addStudentLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="addStudentLabel">Add New Student</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="addStudentForm">
+                        <div class="mb-3">
+                            <label for="studentName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="studentName" name="studentName"
+                                placeholder="Enter full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentNumber" class="form-label">Mobile Number</label>
+                            <input type="text" class="form-control" id="studentNumber" name="studentNumber"
+                                placeholder="Enter mobile number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentAge" class="form-label">Age</label>
+                            <input type="number" class="form-control" id="studentAge" name="studentAge"
+                                placeholder="Enter age" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="studentAddress" name="studentAddress"
+                                placeholder="Enter address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentRoom" class="form-label">Room Number</label>
+                            <input type="text" class="form-control" id="studentRoom" name="studentRoom"
+                                placeholder="Assign room to student" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentFees" class="form-label">Fees Paid</label>
+                            <select id="studentFees" name="studentFees" class="form-control">
+                                <option value="false" selected>No</option>
+                                <option value="true">Yes</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" form="addStudentForm" class="btn btn-primary">Add Student</button>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Student List Modal  -->
+    <!-- <div class="modal fade" id="studentListModal" tabindex="-1" aria-labelledby="studentListLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="studentListLabel">Student List</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Room List Modal  -->
+    <div class="modal fade" id="roomListModal" tabindex="-1" aria-labelledby="roomListLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="roomListLabel">Room List</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Fees Modal  -->
+    <div class="modal fade" id="feesModal" tabindex="-1" aria-labelledby="feesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="feesLabel">Fees Management</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery Validation Plugin -->
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!-- SweetAlert2 JS -->
+    <script src="js/sweetalert2@11.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

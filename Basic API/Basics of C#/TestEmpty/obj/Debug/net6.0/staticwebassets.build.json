@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7efnzc9kvojR4lz56gG2KgCfW0BRe827VNiN925fdwc=",
+  "Source": "TestEmpty",
+  "BasePath": "_content/TestEmpty",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

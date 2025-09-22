@@ -1,0 +1,12 @@
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\bin\Release\net6.0\TestClassLibrary.deps.json
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\bin\Release\net6.0\TestClassLibrary.dll
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\bin\Release\net6.0\TestClassLibrary.pdb
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\obj\Release\net6.0\TestClassLibrary.csproj.AssemblyReference.cache
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\obj\Release\net6.0\TestClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\obj\Release\net6.0\TestClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\obj\Release\net6.0\TestClassLibrary.AssemblyInfo.cs
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\obj\Release\net6.0\TestClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\obj\Release\net6.0\TestClassLibrary.dll
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\obj\Release\net6.0\refint\TestClassLibrary.dll
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\obj\Release\net6.0\TestClassLibrary.pdb
+C:\Users\Kiran.B\Desktop\Training 2025\Basic API\Basics of C#\TestClassLibrary\obj\Release\net6.0\ref\TestClassLibrary.dll

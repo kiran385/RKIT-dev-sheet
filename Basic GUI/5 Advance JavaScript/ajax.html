@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $.ajax({
+            url: 'https://687f84e0efe65e52008a1051.mockapi.io/dummy/students',
+            method: 'POST',
+            dataType: 'json',
+            contentType: 'application/json',
+            data: JSON.stringify({ name: 'Kiran'}),
+            crossDomain: true,
+            success: function (data) {
+                console.log('Success:', data);
+            },
+            error: function () {
+                alert('An error occurred. Please try again later!');
+            },
+            complete: function () {
+                console.log('Request finished');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

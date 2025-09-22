@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in JS</title>
+</head>
+
+<body>
+    <script>
+        const str = "  Hello, World!  ";
+        const name = "Kiran";
+
+        // length property
+        console.log("Length:", str.length);
+
+        // charAt()
+        console.log("charAt(2):", str.charAt(2));
+
+        // concat()
+        console.log("concat():", name.concat(" says hi!"));
+
+        // at() - supports negative indexing
+        console.log("at(-3):", str.at(-3));
+
+        // slice()
+        console.log("slice(2, -10):", str.slice(2, -10));
+
+        // substring()
+        console.log("substring(-5, 7):", str.substring(-5, 7));
+
+        // toUpperCase()
+        console.log("toUpperCase():", str.toUpperCase());
+
+        // toLowerCase()
+        console.log("toLowerCase():", str.toLowerCase());
+
+        // trim()
+        console.log("trim():", str.trim());
+
+        // trimStart()
+        console.log("trimStart():", str.trimStart());
+
+        // trimEnd()
+        console.log("trimEnd():", str.trimEnd());
+
+        // padStart()
+        console.log("padStart():", name.padStart(10, "*"));
+
+        // padEnd()
+        console.log("padEnd():", name.padEnd(10, "-"));
+
+        // repeat()
+        console.log("repeat(3):", name.repeat(3));
+
+        // replace()
+        console.log("replace():", str.replace("World", "JavaScript"));
+
+        // replaceAll()
+        const temp = "@-@-@-@";
+        console.log("replaceAll():", temp.replaceAll("@", "*"));
+
+        // split()
+        console.log("split(','):", str.trim().split(","));
+
+        // indexOf()
+        console.log("indexOf('World'):", str.indexOf("World"));
+
+        // search
+        console.log("search(/World/):", str.search(/world/i));
+
+        // lastIndexOf()
+        console.log("lastIndexOf('l'):", str.lastIndexOf("l")); 
+
+        // includes()
+        console.log("includes('Hello'):", str.includes("Hello")); 
+
+        // startsWith()
+        console.log("startsWith('  He'):", str.startsWith("  He")); 
+
+        // endsWith()
+        console.log("endsWith('!  '):", str.endsWith("!  ")); 
+
+    </script>
+</body>
+
+</html>

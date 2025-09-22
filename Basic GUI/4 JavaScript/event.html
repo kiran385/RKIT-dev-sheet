@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All JavaScript Events Demo</title>
+    <style>
+        section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .log {
+            background: #f4f4f4;
+            padding: 10px;
+            height: 100px;
+            overflow-y: auto;
+            font-size: 14px;
+        }
+
+        input,
+        button,
+        video,
+        form {
+            margin-top: 8px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Events Demo</h1>
+
+    <!-- Page Events -->
+    <section>
+        <h2>Page Events</h2>
+        <div class="log" id="pageLog"></div>
+    </section>
+
+    <!-- Form/Input Events -->
+    <section>
+        <h2>Form & Input Events</h2>
+        <form id="testForm">
+            <input type="text" required placeholder="Type something..." id="textInput">
+            <button type="submit">Submit</button>
+        </form>
+        <div class="log" id="formLog"></div>
+    </section>
+
+    <!-- Mouse Events -->
+    <section>
+        <h2>Mouse Events</h2>
+        <button id="mouseBtn">Mouse Events Area</button>
+        <div class="log" id="mouseLog"></div>
+    </section>
+
+    <!-- Keyboard Events -->
+    <section>
+        <h2>Keyboard Events</h2>
+        <input type="text" id="keyboardInput" placeholder="Press keys here">
+        <div class="log" id="keyboardLog"></div>
+    </section>
+
+    <!-- Media Events -->
+    <section>
+        <h2>Media Events</h2>
+        <video id="video" width="320" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <div class="log" id="mediaLog"></div>
+    </section>
+
+    <!-- Drag and Drop Events -->
+    <section>
+        <h2>Drag and Drop Events</h2>
+        <div id="dragSource" draggable="true" style="width:100px;height:100px;background:#99f;">Drag me</div>
+        <div id="dropTarget" style="width:200px;height:100px;background:#ccc;margin-top:10px;">Drop here</div>
+        <div class="log" id="dragLog"></div>
+    </section>
+
+    <!-- Scroll, Resize, Print -->
+    <section>
+        <h2>Other Events</h2>
+        <div class="log" id="miscLog"></div>
+    </section>
+
+    <script>
+        const log = (id, msg) => {
+            const el = document.getElementById(id);
+            el.innerHTML += `${msg}<br>`;
+            el.scrollTop = el.scrollHeight;
+        };
+
+        // Page events
+        window.onload = () => log("pageLog", "Window loaded");
+        window.onpageshow = () => log("pageLog", "Page shown");
+        // window.onunload = () => log("pageLog", "Window unloading");
+
+        // Form/Input
+        const form = document.getElementById("testForm");
+        const textInput = document.getElementById("textInput");
+        form.onsubmit = e => {
+            e.preventDefault();
+            log("formLog", "Form submitted");
+        };
+        textInput.oninput = () => log("formLog", "Input event");
+        textInput.onchange = () => log("formLog", "Change event");
+        textInput.onfocus = () => log("formLog", "Input focused");
+        textInput.onblur = () => log("formLog", "Input blurred");
+        textInput.oninvalid = () => log("formLog", "Invalid input");
+
+        // Mouse Events
+        const mouseBtn = document.getElementById("mouseBtn");
+        mouseBtn.onclick = () => log("mouseLog", "Click");
+        mouseBtn.ondblclick = () => log("mouseLog", "Double click");
+        mouseBtn.oncontextmenu = e => {
+            e.preventDefault();
+            log("mouseLog", "Context menu");
+        };
+        mouseBtn.onmousedown = () => log("mouseLog", "Mouse down");
+        mouseBtn.onmouseup = () => log("mouseLog", "Mouse up");
+        mouseBtn.onmouseover = () => log("mouseLog", "Mouse over");
+        mouseBtn.onmouseout = () => log("mouseLog", "Mouse out");
+        mouseBtn.onmousemove = () => log("mouseLog", "Mouse move");
+        mouseBtn.onmousewheel = () => log("mouseLog", "Mouse wheel");
+
+        // Keyboard Events
+        const keyInput = document.getElementById("keyboardInput");
+        keyInput.onkeydown = e => log("keyboardLog", `Key down: ${e.key}`);
+        keyInput.onkeypress = e => log("keyboardLog", `Key press: ${e.key}`);
+        keyInput.onkeyup = e => log("keyboardLog", `Key up: ${e.key}`);
+
+        // Media Events
+        const video = document.getElementById("video");
+        video.onplay = () => log("mediaLog", "Play");
+        video.onpause = () => log("mediaLog", "Pause");
+        video.onplaying = () => log("mediaLog", "Playing");
+        video.onended = () => log("mediaLog", "Ended");
+        video.onvolumechange = () => log("mediaLog", "Volume changed");
+        video.ontimeupdate = () => log("mediaLog", "Time update");
+        video.onloadeddata = () => log("mediaLog", "Loaded data");
+        video.onloadedmetadata = () => log("mediaLog", "Loaded metadata");
+        video.oncanplay = () => log("mediaLog", "Can play");
+        video.oncanplaythrough = () => log("mediaLog", "Can play through");
+        video.ondurationchange = () => log("mediaLog", "Duration change");
+        video.onwaiting = () => log("mediaLog", "Waiting");
+        video.onstalled = () => log("mediaLog", "Stalled");
+        video.onemptied = () => log("mediaLog", "Emptied");
+        video.onseeked = () => log("mediaLog", "Seeked");
+        video.onseeking = () => log("mediaLog", "Seeking");
+
+        // Drag and Drop
+        const dragSource = document.getElementById("dragSource");
+        const dropTarget = document.getElementById("dropTarget");
+
+        dragSource.ondragstart = () => log("dragLog", "Drag start");
+        dragSource.ondragend = () => log("dragLog", "Drag end");
+
+        dropTarget.ondragover = e => {
+            e.preventDefault();
+            log("dragLog", "Drag over");
+        };
+        dropTarget.ondragenter = () => log("dragLog", "Drag enter");
+        dropTarget.ondragleave = () => log("dragLog", "Drag leave");
+        dropTarget.ondrop = e => {
+            e.preventDefault();
+            log("dragLog", "Drop");
+        };
+
+
+        // Misc
+        window.onresize = () => log("miscLog", "Window resized");
+        window.onscroll = () => log("miscLog", "Scrolled");
+    </script>
+
+</body>
+
+</html>

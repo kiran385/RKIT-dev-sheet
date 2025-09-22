@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in JS</title>
+</head>
+
+<body>
+    <script>
+        // 1. Array.length
+        const arr1 = [1, 2, 3];
+        console.log(`Length: ${arr1.length}`);
+
+        // 2. Array.toString()
+        console.log(`toString(): ${arr1.toString()}`);
+
+        // 3. Array.at()
+        console.log(`Element at index 1: ${arr1.at(1)}`);
+
+        // 4. Array.join()
+        console.log(`Joined with '*': ${arr1.join('*')}`);
+
+        // 5. Array.pop()
+        let arr2 = [1, 2, 3];
+        console.log(`Popped element: ${arr2.pop()}`);
+
+        // 6. Array.push()
+        console.log(`New length after push: ${arr2.push(3)}`);
+
+        // 7. Array.shift()
+        console.log(`Shifted element: ${arr2.shift()}`);
+
+        // 8. Array.unshift()
+        console.log(`New length after unshift: ${arr2.unshift(1)}`);
+
+        // 9. delete array[index]
+        const arr3 = [1, 2, 3];
+        delete arr3[1];
+        console.log(`After delete: ${arr3}`);
+
+        // 10. Array.concat()
+        const a = [1, 2];
+        const b = [3, 4];
+        console.log(`Concatenated: ${a.concat(b)}`);
+
+        // 11. Array.copyWithin()
+        const arr4 = [1, 2, 3, 4];
+        arr4.copyWithin(1, 2);
+        console.log(`After copyWithin: ${arr4}`);
+
+        // 12. Array.flat()
+        console.log(`Flattened array: ${[1, [2, [3]]].flat(2)}`);
+
+        // 13. Array.slice()
+        console.log(`Slice from 1 to 3: ${[1, 2, 3, 4].slice(1, 3)}`);
+
+        // 14. Array.splice()
+        const arr5 = [1, 2, 3, 4];
+        arr5.splice(1, 2, 'a', 'b');
+        console.log(`After splice: ${arr5}`);
+
+        // 15. Array.toSpliced()
+        const arr6 = [1, 2, 3, 4];
+        const newArr1 = arr6.toSpliced(1, 2, 'a');
+        console.log(`After toSpliced: ${newArr1}`);
+
+        // 16. Array.indexOf()
+        console.log(`Index of 2: ${[1, 2, 3, 2].indexOf(2)}`);
+
+        // 17. Array.lastIndexOf()
+        console.log(`Last index of 2: ${[1, 2, 3, 2].lastIndexOf(2)}`);
+
+        // 18. Array.includes()
+        console.log(`Includes 2? ${[1, 2, 3].includes(2)}`);
+
+        // 19. Array.find()
+        console.log(`First element > 10: ${[5, 10, 15].find(x => x > 10)}`);
+
+        // 20. Array.findIndex()
+        console.log(`Index of first > 10: ${[5, 10, 15].findIndex(x => x > 10)}`);
+
+        // 21. Array.findLast()
+        console.log(`Last element > 10: ${[5, 10, 15, 20].findLast(x => x > 10)}`);
+
+        // 22. Array.findLastIndex()
+        console.log(`Last index > 10: ${[5, 10, 15, 20].findLastIndex(x => x > 10)}`);
+
+        // 23. Array.sort()
+        const arr7 = [10, 2, 30];
+        arr7.sort();
+        console.log(`Sorted lexically: ${arr7}`);
+        arr7.sort((a, b) => a - b);
+        console.log(`Sorted numerically: ${arr7}`);
+
+        // 24. Array.reverse()
+        const arr8 = [1, 20, 3];
+        arr8.reverse();
+        console.log(`Reversed: ${arr8}`);
+
+        // 25. Array.toSorted()
+        const arr9 = [3, 1, 2];
+        const sorted = arr9.toSorted();
+        console.log(`toSorted(): ${sorted}`);
+
+        // 26. Array.toReversed()
+        const rev = arr9.toReversed();
+        console.log(`toReversed(): ${rev}`);
+
+        // 27. Array.forEach()
+        console.log(`forEach:`);
+        [1, 2, 3].forEach(item => console.log(`${item}`));
+
+        // 28. Array.map()
+        const squared = [1, 2, 3].map(n => n * n);
+        console.log(`Mapped (squared): ${squared}`);
+
+        // 29. Array.flatMap()
+        console.log(`flatMap(): ${[1, 2].flatMap(x => [x, x * 2])}`);
+
+        // 30. Array.filter()
+        const even = [1, 2, 3, 4].filter(n => n % 2 === 0);
+        console.log(`Filtered (even): ${even}`);
+
+        // 31. Array.reduce()
+        const sum = [1, 2, 3].reduce((total, num) => total + num, 0);
+        console.log(`Reduced (sum): ${sum}`);
+
+        // 32. Array.every()
+        console.log(`Every even? ${[2, 4, 6].every(n => n % 2 === 0)}`);
+
+        // 33. Array.some()
+        console.log(`Some even? ${[1, 3, 4].some(n => n % 2 === 0)}`);
+
+        // 34. Array.from()
+        console.log(`Array from string: ${Array.from("hello")}`);
+
+        // 35. Array.keys()
+        console.log(`Array keys: ${[..."ab"].keys()}`); // This will print the iterator object
+        console.log(`Array keys (expanded): ${[...["a", "b"].keys()]}`); // Proper expansion
+
+        // 36. Array.entries()
+        console.log(`Array entries:`);
+        for (const [i, val] of ["a", "b"].entries()) {
+            console.log(`- Index ${i}: ${val}`);
+        }
+
+        // 37. Spread ...
+        const newArr2 = [...[1, 2, 3], 4];
+        console.log(`Spread into new array: ${newArr2}`);
+
+        // 38. Rest ...
+        const [a1, ...rest] = [1, 2, 3, 4];
+        console.log(`First value: ${a1}`);
+        console.log(`Rest values: ${rest}`);
+
+    </script>
+</body>
+
+</html>

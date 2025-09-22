@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+    <style>
+        #gender {
+            color: rgb(27, 51, 78);
+            font-weight: 600;
+        }
+    </style>
+    <!-- <script async src="async_script.js"></script> -->
+    <!-- <script defer src="defer_script.js"></script> -->
+</head>
+
+<!-- <body onload="alert('Page loaded')"> -->
+
+<body onload="onloadNumber()">
+    <h2>JavaScript Events</h2>
+    <table border="2" width="50%">
+        <thead>
+            <tr>
+                <th width="35%">Event</th>
+                <th width="65%">Field</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>onclick</td>
+                <td>
+                    <button id="click"
+                        onclick="document.getElementById('click').innerHTML = 'This Button Clicked'">Click</button>
+                </td>
+            </tr>
+            <tr>
+                <td>onmouseover</td>
+                <td>
+                    <button onmouseover="this.style.background = 'red'">Hover here</button>
+                </td>
+            </tr>
+            <tr>
+                <td>onmouseout</td>
+                <td>
+                    <button onmouseout="this.style.background = 'green'">Mouse out</button>
+                </td>
+            </tr>
+            <tr>
+                <td>onkeydown</td>
+                <td>
+                    <input type="text" onkeydown="this.style.background = 'yellow'" id="btn1"
+                        placeholder="Enter your name">
+                </td>
+            </tr>
+            <tr>
+                <td>onkeyup</td>
+                <td>
+                    <input type="text" onkeyup="this.style.background = 'gray'" placeholder="Enter your email">
+                </td>
+            </tr>
+            <tr>
+                <td>onchange</td>
+                <td>
+                    <input type="radio" onchange="document.getElementById('gender').innerHTML = 'Selected Male'"
+                        id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" onchange="document.getElementById('gender').innerHTML = 'Selected Female'"
+                        id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <span id="gender"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>onfocus</td>
+                <td>
+                    <input type="text" onfocus="this.style.background = 'aqua'" placeholder="Focus here">
+                </td>
+            </tr>
+            <tr>
+                <td>onblur</td>
+                <td>
+                    <input type="text" onblur="this.style.background = 'black'" placeholder="Focus and go">
+                </td>
+            </tr>
+            <tr>
+                <td>onload</td>
+                <td>
+                    <span id="load"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>onsubmit</td>
+                <td>
+                    <form action="#">
+                        <button type="submit" id="submit" onclick='console.log("This is submit event")'>Submit</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

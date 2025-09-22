@@ -1,0 +1,239 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\HelloWorld\\HelloWorld.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\HelloWorld\\HelloWorld.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\HelloWorld\\HelloWorld.csproj",
+        "projectName": "HelloWorld",
+        "projectPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\HelloWorld\\HelloWorld.csproj",
+        "packagesPath": "C:\\Users\\Kiran.B\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\HelloWorld\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kiran.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team1\\Team1.csproj": {
+                "projectPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team1\\Team1.csproj"
+              },
+              "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\TestClassLibrary\\TestClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\TestClassLibrary\\TestClassLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team1\\Team1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team1\\Team1.csproj",
+        "projectName": "Team1",
+        "projectPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team1\\Team1.csproj",
+        "packagesPath": "C:\\Users\\Kiran.B\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kiran.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team2\\Team2.csproj": {
+                "projectPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team2\\Team2.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team2\\Team2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team2\\Team2.csproj",
+        "projectName": "Team2",
+        "projectPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team2\\Team2.csproj",
+        "packagesPath": "C:\\Users\\Kiran.B\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kiran.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\TestClassLibrary\\TestClassLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\TestClassLibrary\\TestClassLibrary.csproj",
+        "projectName": "TestClassLibrary",
+        "projectPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\TestClassLibrary\\TestClassLibrary.csproj",
+        "packagesPath": "C:\\Users\\Kiran.B\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\TestClassLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kiran.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

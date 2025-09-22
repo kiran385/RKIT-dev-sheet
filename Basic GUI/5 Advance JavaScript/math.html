@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math object in JS</title>
+</head>
+
+<body>
+    <script>
+        // Rounding to the nearest integer
+        console.log('Math.round(4.6) :', Math.round(4.6));   // 5
+        console.log('Math.round(4.4) :', Math.round(4.4));   // 4
+
+        // Rounding up to the nearest integer
+        console.log('Math.ceil(4.1) :', Math.ceil(4.1));     // 5
+        console.log('Math.ceil(-4.1) :', Math.ceil(-4.1));   // -4
+
+        // Rounding down to the nearest integer
+        console.log('Math.floor(4.9) :', Math.floor(4.9));   // 4
+        console.log('Math.floor(-4.1) :', Math.floor(-4.1)); // -5
+
+        // Truncating the decimal part
+        console.log('Math.trunc(4.9) :', Math.trunc(4.9));   // 4
+        console.log('Math.trunc(-4.9) :', Math.trunc(-4.9)); // -4
+
+        // Sign of the number
+        console.log('Math.sign(10) :', Math.sign(10));       // 1
+        console.log('Math.sign(-10) :', Math.sign(-10));     // -1
+        console.log('Math.sign(0) :', Math.sign(0));         // 0
+
+        // Power calculation
+        console.log('Math.pow(2, 3) :', Math.pow(2, 3));     // 8
+
+        // Square root
+        console.log('Math.sqrt(9) :', Math.sqrt(9));         // 3
+
+        // Cube root
+        console.log('Math.cbrt(8) :', Math.cbrt(8));         // 2
+
+        // Absolute value
+        console.log('Math.abs(-10) :', Math.abs(-10));       // 10
+
+        // Sine of angle in radians
+        console.log('Math.sin(Math.PI / 2) :', Math.sin(Math.PI / 2)); // 1
+
+        // Cosine of angle in radians
+        console.log('Math.cos(0) :', Math.cos(0));                   // 1
+
+        // Maximum value
+        console.log('Math.max(3, 7, 2, 9) :', Math.max(3, 7, 2, 9));  // 9
+
+        // Minimum value
+        console.log('Math.min(3, 7, 2, 9) :', Math.min(3, 7, 2, 9));  // 2
+
+        // Random number between 0 and 1
+        console.log('Math.random() :', Math.random());  
+
+        // Natural logarithm (base e)
+        console.log('Math.log(Math.E) :', Math.log(Math.E));         // 1
+
+        // Base 2 logarithm
+        console.log('Math.log2(8) :', Math.log2(8));                 // 3
+
+        // Base 10 logarithm
+        console.log('Math.log10(100) :', Math.log10(100));           // 2
+
+        // 32-bit integer multiplication
+        console.log('Math.imul(2, 4) :', Math.imul(2, 4));           // 8
+
+        // Square root of the sum of squares of arguments
+        console.log('Math.hypot(3, 4) :', Math.hypot(3, 4));         // 5
+        console.log('Math.hypot(3, 4, 12) :', Math.hypot(3, 4, 12)); // 13
+
+    </script>
+</body>
+
+</html>

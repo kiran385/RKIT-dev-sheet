@@ -1,0 +1,60 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "HelloWorld/1.0.0": {
+        "dependencies": {
+          "Team1": "1.0.0",
+          "TestClassLibrary": "1.0.0"
+        },
+        "runtime": {
+          "HelloWorld.dll": {}
+        }
+      },
+      "Team1/1.0.0": {
+        "dependencies": {
+          "Team2": "1.0.0"
+        },
+        "runtime": {
+          "Team1.dll": {}
+        }
+      },
+      "Team2/1.0.0": {
+        "runtime": {
+          "Team2.dll": {}
+        }
+      },
+      "TestClassLibrary/1.0.0": {
+        "runtime": {
+          "TestClassLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HelloWorld/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Team1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Team2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TestClassLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

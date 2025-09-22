@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage in JS</title>
+</head>
+
+<body>
+    <h2>Enter Your Name:</h2>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="storeData()">Save</button>
+
+    <h3>Stored Data:</h3>
+    <p><strong>Session Storage:</strong> <span id="sessionOutput"></span></p>
+    <p><strong>Local Storage:</strong> <span id="localOutput"></span></p>
+    <p><strong>Cookie:</strong> <span id="cookieOutput"></span></p>
+
+    <script>
+        function storeData() {
+            const name = document.getElementById("name").value;
+
+            // Session Storage
+            sessionStorage.setItem("sessionName", name);
+
+            // Local Storage
+            localStorage.setItem("localName", name);
+
+            // Cookies (expires in 1 hour)
+            document.cookie = "userName=" + encodeURIComponent(name) + "; max-age=3600";
+
+            // Show stored values
+            document.getElementById("sessionOutput").textContent = sessionStorage.getItem("sessionName");
+            document.getElementById("localOutput").textContent = localStorage.getItem("localName");
+            document.getElementById("cookieOutput").textContent = getCookie("userName");
+        }
+
+        // Read cookie
+        function getCookie(name) {
+            const cookieArr = document.cookie.split("; ");
+            for (let c of cookieArr) {
+                const [key, val] = c.split("=");
+                if (key === name) return decodeURIComponent(val);
+            }
+            return "";
+        }
+
+        // Load stored values when page is loaded
+        window.onload = () => {
+            document.getElementById("sessionOutput").textContent = sessionStorage.getItem("sessionName") || "(none)";
+            document.getElementById("localOutput").textContent = localStorage.getItem("localName") || "(none)";
+            document.getElementById("cookieOutput").textContent = getCookie("userName") || "(none)";
+        };
+    </script>
+</body>
+
+</html>

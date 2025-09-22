@@ -1,0 +1,128 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Team1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Team2": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Team1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Team1.dll": {}
+        }
+      },
+      "Team2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Team2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Team2.dll": {}
+        }
+      },
+      "TestClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/TestClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestClassLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Team1/1.0.0": {
+      "type": "project",
+      "path": "../Team1/Team1.csproj",
+      "msbuildProject": "../Team1/Team1.csproj"
+    },
+    "Team2/1.0.0": {
+      "type": "project",
+      "path": "../Team2/Team2.csproj",
+      "msbuildProject": "../Team2/Team2.csproj"
+    },
+    "TestClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../TestClassLibrary/TestClassLibrary.csproj",
+      "msbuildProject": "../TestClassLibrary/TestClassLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Team1 >= 1.0.0",
+      "TestClassLibrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Kiran.B\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\HelloWorld\\HelloWorld.csproj",
+      "projectName": "HelloWorld",
+      "projectPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\HelloWorld\\HelloWorld.csproj",
+      "packagesPath": "C:\\Users\\Kiran.B\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\HelloWorld\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Kiran.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team1\\Team1.csproj": {
+              "projectPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\Team1\\Team1.csproj"
+            },
+            "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\TestClassLibrary\\TestClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\Kiran.B\\Desktop\\Training 2025\\Basic API\\Basics of C#\\TestClassLibrary\\TestClassLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

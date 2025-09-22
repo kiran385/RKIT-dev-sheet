@@ -1,0 +1,24 @@
+body {
+    background: linear-gradient(to bottom, #f2fcfe, #1c92d2);
+}
+
+.studentListContainer{
+    background-color: white;
+    width: 60vw;
+    margin: 30px auto;
+    padding: 40px 70px 20px 70px;
+}
+
+.studentListHeader{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.studentListBody{
+    font-size: 16px;
+}
+
+.studentListFooter{
+    margin-top: 10px;
+}

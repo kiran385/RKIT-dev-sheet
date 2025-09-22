@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+
+<body>
+    <script>
+        // Base class
+        class Person {
+            #mobile; // Encapsulated private field
+
+            constructor(name, age, mobile) {
+                this.name = name;
+                this.age = age;
+                this.#mobile = mobile;
+            }
+
+            // Getter (Abstraction & Encapsulation)
+            get maskedMobile() {
+                return "***-***-" + this.#mobile.slice(-4);
+            }
+
+            // Setter (Abstraction & Encapsulation)
+            set updateAge(newAge) {
+                if (newAge > 0) {
+                    this.age = newAge;
+                }
+            }
+
+            greet() {
+                console.log(`This is base class greet() method`);
+            }
+
+            showMobile() {
+                console.log(`${this.name}'s mobile number is ${this.maskedMobile}`);
+            }
+
+            // Static method
+            static country() {
+                return "India";
+            }
+        }
+
+        // Subclass
+        class Student extends Person {
+            constructor(name, age, mobile, course) {
+                super(name, age, mobile); 
+                this.course = course;
+            }
+
+            // Method overriding (Polymorphism)
+            greet() {
+                console.log(`greet() method is overriden by subclass`);
+            }
+
+            study() {
+                console.log(`${this.name} is studying ${this.course}`);
+            }
+        }
+
+        // Create objects
+        const p1 = new Person("Kiran", 19, "9876543210");
+        const s1 = new Student("Kiran Baraiya", 19, "999999999", "JavaScript");
+
+        // Using methods
+        p1.greet();
+        p1.showMobile();
+
+        s1.greet();
+        s1.study();
+
+        // Use setter
+        s1.updateAge = 20;
+        console.log(`${s1.name}'s updated age is ${s1.age}`);
+
+        // Static method usage
+        console.log(Student.country()); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation Demo</title>
+    <style>
+        .box {
+            padding: 50px;
+            margin: auto;
+            width: 50%;
+            font-size: 25px;
+        }
+
+        #outer {
+            background-color: lightcoral;
+        }
+
+        #inner {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="outer">
+        <div class="box" id="inner">
+            <button id="btn">
+                Click Here
+            </button>
+        </div>
+    </div>
+    <pre id="output" class="box"></pre>
+    <script>
+        // Capturing
+        document.getElementById('outer').addEventListener('click', function () {
+            output.textContent += `This is Capturing outer div\n`;
+        }, { capture: true })
+        document.getElementById('inner').addEventListener('click', function () {
+            output.textContent += `This is Capturing inner div\n`;
+        }, { capture: true })
+        document.getElementById('btn').addEventListener('click', function (e) {
+            output.textContent += `This is Capturing button\n`;
+            // e.stopImmediatePropagation();
+            // e.stopPropagation();
+        })
+
+        // Bubbling
+        document.getElementById('outer').addEventListener('click', function () {
+            output.textContent += `This is Bubbling outer div\n`;
+        })
+        document.getElementById('inner').addEventListener('click', function () {
+            output.textContent += `This is Bubbling inner div\n`;
+        })
+        document.getElementById('btn').addEventListener('click', function (e) {
+            output.textContent += `This is Bubbling button\n`;
+            // e.stopPropagation();
+        })
+
+        // Use of preventDefault
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            output.textContent += `Right-click disabled\n`;
+        });
+
+    </script>
+</body>
+
+</html>

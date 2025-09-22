@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterations in JS</title>
+</head>
+
+<body>
+    <Script>
+        let numbers = [10, 20, 30, 40, 50];
+
+        //for loop
+        console.log('Output of for loop');
+        for (let i = 0; i < numbers.length; i++) {
+            console.log(numbers[i]);
+        }
+
+        //for of loop
+        console.log('Output of for of loop');
+        for (const num of numbers) {
+            console.log(num);
+        }
+
+        //for in loop
+        console.log('Output of for in loop');
+        for (const key in numbers) {         //key gives index of array in for in loop
+            console.log(numbers[key]);
+        }
+
+        //for each loop
+        console.log('Output of for each loop');
+        numbers.forEach(num => {
+            console.log(num);
+        });
+
+        //filter
+        console.log('Output of filter on array');
+        const bigNumbers = numbers.filter(num => num > 25);
+        console.log(bigNumbers);
+
+        //reduce
+        console.log('Output of reduce on array');
+        const total = numbers.reduce((acc, curr) => { return acc + curr }, 0);
+        console.log(total);
+
+        //map
+        console.log('Output of map on array');
+        const divideTen = numbers.map(num => num / 10);
+        console.log(divideTen);
+
+        //Chaining of filter and map methods
+        console.log('Output of chaining of map, filter and reduce on array');
+        const newNumbers = numbers
+            .map(num => num * 100 - num * 20)
+            .map(num => num / 100)
+            .filter(num => num < 25)
+            .reduce((sum, curr) => (sum + curr), 0);
+        console.log(`Total price after buying items with price less than 25 after applying 20% discount: ${newNumbers} `);
+
+        const coding = {
+            js: 'JavaScript',
+            cpp: 'C++',
+            rb: 'Ruby',
+        }
+
+        //for in loop on object
+        console.log('Output of for in loop on object');
+        for (const key in coding) {
+            console.log(`${key} : ${coding[key]}`);
+        }
+        //We can't directly use for of loop and for each loop on object in js
+
+        const myCoding = [
+            {
+                languageName: 'JavaScript',
+                languageExtension: 'js'
+            },
+            {
+                languageName: 'C++',
+                languageExtension: 'cpp'
+            },
+            {
+                languageName: 'C#',
+                languageExtension: 'cs'
+            }
+        ]
+
+        //for each loop on array of object
+        console.log('Output of for each loop on array of object');
+        myCoding.forEach(obj => {
+            console.log(`${obj.languageName} has ${obj.languageExtension} extension`);
+        });
+
+    </Script>
+</body>
+
+</html>

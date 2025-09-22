@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JS</title>
+</head>
+
+<body>
+    <script>
+        function sum(a, b) {
+            return a + b;
+        }
+        console.log("sum(2, 3):", sum(2, 3)); 
+
+
+        const sub = (a, b) => {
+            return a - b;
+        };
+        console.log("sub(5, 3):", sub(5, 3)); 
+
+        const square = x => x * x;
+        console.log("square(4):", square(4)); 
+
+
+        value = 50;
+        const demoObj = {
+            value: 42,
+
+            // Regular function: `this` points to `demoObj`
+            regularFunc: function () {
+                console.log("regularFunc this.value:", this.value);
+            },
+
+            // Arrow function: `this` lexically bound, usually points to outer scope 
+            arrowFunc: () => {
+                console.log("arrowFunc this.value:", this.value);
+            },
+        };
+
+        console.log("\nCalling demoObj.regularFunc():");
+        demoObj.regularFunc(); // 42
+
+        console.log("\nCalling demoObj.arrowFunc():");
+        demoObj.arrowFunc(); // 50
+
+        console.log("\nGlobal this:", this);
+
+    </script>
+</body>
+
+</html>

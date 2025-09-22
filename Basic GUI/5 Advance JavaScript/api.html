@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+
+<body>
+    <script>
+        // Create button
+        const newButton = document.createElement('button');
+        newButton.innerHTML = 'Click to find your profile';
+        document.body.appendChild(newButton);
+
+        document.querySelector('button').addEventListener('click', function () {
+            function displayProfile(data) {
+                // Create a new <div> element
+                const newDiv = document.createElement('div');
+
+                newDiv.innerHTML = `
+                                    <h1>GitHub Profile</h1>
+                                    <h2>${data.name}</h2>
+                                    <img src="${data.avatar_url}" alt="Avatar" width="100">
+                                    <p><strong>Username:</strong> ${data.login}</p>
+                                    <p><strong>Followers:</strong> ${data.followers}</p>
+                                    <p><strong>Public Repositories:</strong> ${data.public_repos}</p>
+                                `;
+                newDiv.style.backgroundColor = 'lightblue';
+                newDiv.style.padding = '10px';
+                newDiv.style.margin = '10px';
+                newDiv.style.width = '220px';
+                newDiv.id = 'myNewDiv';
+
+                // Append the new <div> to the <body>
+                document.body.appendChild(newDiv);
+            }
+
+            const requestUrl = 'https://api.github.com/users/kiran385'
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', requestUrl)
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    const data = JSON.parse(this.responseText)
+                    displayProfile(data);
+                }
+            }
+            xhr.send();
+        })
+
+    </script>
+</body>
+
+</html>

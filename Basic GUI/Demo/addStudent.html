@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic GUI Demo</title>
+    <link rel="stylesheet" href="css/addStudent.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar bg-body-tertiary m-0 p-0">
+        <div class="container-fluid bg-dark">
+            <a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+            <span class="navbar-brand mb-0 mx-auto h1 text-light">Royal Care Hostel</span>
+            <i class="fa-solid fa-backward-step mx-3" id="backward" style="color: #ffffff; cursor: pointer;"></i>
+            <i class="fa-solid fa-forward-step" id="forward" style="color: #ffffff; cursor: pointer;"></i>
+        </div>
+    </nav>
+
+    <div class="addStudentContainer">
+        <div class="addStudentHeader">
+            Add New Student
+        </div>
+        <div class="addStudentBody">
+            <form id="addStudentForm">
+                <div class="mb-3">
+                    <label for="studentName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="studentName" name="studentName"
+                        placeholder="Enter full name">
+                </div>
+                <div class="mb-3">
+                    <label for="studentNumber" class="form-label">Mobile Number</label>
+                    <input type="text" class="form-control" id="studentNumber" name="studentNumber"
+                        placeholder="Enter mobile number">
+                </div>
+                <div class="mb-3">
+                    <label for="studentAge" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="studentAge" name="studentAge"
+                        placeholder="Enter age">
+                </div>
+                <div class="mb-3">
+                    <label for="studentAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="studentAddress" name="studentAddress"
+                        placeholder="Enter address">
+                </div>
+                <div class="mb-3">
+                    <label for="studentRoom" class="form-label">Room Number</label>
+                    <input type="text" class="form-control" id="studentRoom" name="studentRoom"
+                        placeholder="Assign room to student">
+                </div>
+                <div class="mb-3">
+                    <label for="studentFees" class="form-label">Fees Paid</label>
+                    <select id="studentFees" name="studentFees" class="form-control">
+                        <option value="false" selected>No</option>
+                        <option value="true">Yes</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <a href="index.html" class="btn btn-secondary" role="button">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Add Student</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery Validation Plugin -->
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!-- SweetAlert2 JS -->
+    <script src="js/sweetalert2@11.js"></script>
+
+    <script src="js/addStudent.js"></script>
+</body>
+</html>

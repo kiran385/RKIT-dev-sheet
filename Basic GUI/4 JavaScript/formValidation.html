@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Demo</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JavaScript Form Validation</h2>
+    <form action="#" target="_blank" id="myForm" method="post">
+        <table border="2" width="50%">
+            <thead>
+                <tr>
+                    <th width="35%">Input</th>
+                    <th width="65%">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name: </td>
+                    <td>
+                        <input type="text" name="name" id="name">
+                        <span class="error" id="name_error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age: </td>
+                    <td>
+                        <input type="number" name="age" id="age">
+                        <span class="error" id="age_error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td>
+                        <input type="text" name="email" id="email">
+                        <span class="error" id="email_error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile number: </td>
+                    <td>
+                        <input type="text" name="number" id="number">
+                        <span class="error" id="number_error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Submit</td>
+                    <td>
+                        <input type="submit" value="Submit" onclick="return validateForm()">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <script>
+        // Validate form values
+        function validateForm() {
+            const name = document.forms["myForm"]["name"].value;
+            const age = document.forms["myForm"]["age"].value;
+            const email = document.forms["myForm"]["email"].value;
+            const number = document.forms["myForm"]["number"].value;
+
+            const nameError = document.getElementById("name_error");
+            const ageError = document.getElementById("age_error");
+            const emailError = document.getElementById("email_error");
+            const numberError = document.getElementById("number_error");
+
+            nameError.textContent = "";
+            ageError.textContent = "";
+            emailError.textContent = "";
+            numberError.textContent = "";
+
+            let isValid = true;
+
+            if (name == "") {
+                nameError.textContent = "Please enter your name";
+                isValid = false;
+            }
+            if (age <= 0 || age > 150) {
+                ageError.textContent = "Please enter valid age";
+                isValid = false;
+            }
+            const emailRegex = /^([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})$/;
+            if (!emailRegex.test(email)) {
+                emailError.textContent = "Please enter valid email";
+                isValid = false;
+            }
+            const numberRegex = /^[7-9][0-9]{9}$/;
+            if (!numberRegex.test(number)) {
+                numberError.textContent = "Please enter valid mobile number";
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert("Form submitted successfully");
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

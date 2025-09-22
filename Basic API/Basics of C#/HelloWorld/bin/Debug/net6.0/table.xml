@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Employees>
+    <ID>2</ID>
+    <Name>Employee2</Name>
+    <Salary>6000</Salary>
+  </Employees>
+</NewDataSet>

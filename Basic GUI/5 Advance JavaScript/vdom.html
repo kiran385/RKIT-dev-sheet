@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virtual DOM Demo</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    function h(type, props, ...children) {
+      return { type, props: props || {}, children };
+    }
+
+    function render(vNode) {
+      if (typeof vNode === 'string') {
+        return document.createTextNode(vNode);
+      }
+      const el = document.createElement(vNode.type);
+      for (const [key, value] of Object.entries(vNode.props)) {
+        el.setAttribute(key, value);
+      }
+      vNode.children.forEach(child => el.appendChild(render(child)));
+      return el;
+    }
+
+    function changed(node1, node2) {
+      return typeof node1 !== typeof node2 ||
+             (typeof node1 === 'string' && node1 !== node2) ||
+             node1.type !== node2.type;
+    }
+
+    function updateElement(parent, newNode, oldNode, index = 0) {
+      if (!oldNode) {
+        parent.appendChild(render(newNode));
+      } else if (!newNode) {
+        parent.removeChild(parent.childNodes[index]);
+      } else if (changed(newNode, oldNode)) {
+        parent.replaceChild(render(newNode), parent.childNodes[index]);
+      } else if (newNode.type) {
+        const newLength = newNode.children.length;
+        const oldLength = oldNode.children.length;
+        for (let i = 0; i < newLength || i < oldLength; i++) {
+          updateElement(
+            parent.childNodes[index],
+            newNode.children[i],
+            oldNode.children[i],
+            i
+          );
+        }
+      }
+    }
+
+    const vOld = h('div', { id: 'app' },
+      h('h1', null, 'Welcome'),
+      h('p', null, 'This is the OLD virtual DOM')
+    );
+
+    const vNew = h('div', { id: 'app' },
+      h('h1', null, 'Hello World!'),
+      h('p', null, 'This is the UPDATED virtual DOM'),
+      h('button', null, 'Click Me')
+    );
+
+    const root = document.getElementById('root');
+    root.appendChild(render(vOld));
+
+    setTimeout(() => {
+      updateElement(root, vNew, vOld);
+    }, 2000);
+  </script>
+</body>
+</html>

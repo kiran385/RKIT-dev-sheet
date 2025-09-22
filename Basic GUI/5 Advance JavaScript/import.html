@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import, export and async await in JS</title>
+</head>
+
+<body>
+    <script type="module">
+        import { fetchData } from './methods.js';
+
+        async function run() {
+            console.log("Fetching data...");
+            const data = await fetchData();
+            console.log("Received data:", data);
+        }
+
+        run();
+
+        console.log('Execute without waiting');
+    </script>
+</body>
+
+</html>

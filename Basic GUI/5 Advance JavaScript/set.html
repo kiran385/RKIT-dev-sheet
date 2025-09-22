@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set in JS</title>
+</head>
+
+<body>
+    <script>
+        const s = new Set();
+
+        s.add(1);
+        s.add("2");
+        s.add(true);
+        s.add(1); // ignored, duplicate
+
+        console.log("Size : " + s.size); // 3
+        console.log("has(1) : " + s.has(1)); // true
+
+        s.delete("2"); // removes 2
+
+        console.log('Output of foreach');
+        s.forEach(val => console.log(val)); 
+
+        s.clear(); 
+
+    </script>
+</body>
+
+</html>

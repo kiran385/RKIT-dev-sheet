@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is HTML Demo">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <meta name="keywords" content="HTML, HTML Demo, Basic HTML">
     <meta name="author" content="KB">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Demo</title>
 </head>
 
-<body>
+<body bgcolor="lightblue">
     <div>
         <!-- h1 tag -->
         <h1>Ministry of Education Government of India</h1>
 
         <!-- Image Tag -->
         <img src="https://tse3.mm.bing.net/th/id/OIP.OE_z3TpnPQZ8JCLCpiY1oAHaDM?rs=1&pid=ImgDetMain&o=7&rm=3"
-            alt="Government of India" width="300" height="150">
+            alt="Government of India" width="300" height="150" title="Government of India">
 
         <!-- Paragraph tag -->
         <p>
@@ -23,8 +27,17 @@
             visit new schemes and policies of education of india from
 
             <!-- Anchor Tag -->
-            <a href="https://www.education.gov.in/en" target="_blank" class="link">Ministry of Education India</a>
+            <a href="https://www.education.gov.in/en" target="_blank">Ministry of Education India</a>
         </p>
+
+        <h2>Following branch students fill the form</h2>
+        <!-- Unordered List -->
+        <ul>
+            <li>CSE</li>
+            <li>IT</li>
+            <li>Civil</li>
+            <li>Mechnical</li>
+        </ul>
 
         <!-- Line Break -->
         <br>
@@ -33,7 +46,7 @@
         <h2>Student Registration Form</h2>
 
         <!-- Form with method, action and target-->
-        <form method="POST" action="#" target="_blank">
+        <form method="POST" action="#" target="_blank" autocomplete="on">
 
             <!-- Table -->
             <table border="2" width="80%">
@@ -58,15 +71,16 @@
                         <!-- Email Input -->
                         <td>Email:</td>
                         <td>
-                            <input type="email" id="email" name="email" class="form-control" value="example@example.com" required>
+                            <input type="email" id="email" name="email" class="form-control" value="example@example.com"
+                                required>
                         </td>
                     </tr>
                     <tr>
                         <!-- Mobile Number Input -->
                         <td>Mobile number:</td>
                         <td>
-                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="9876543210" pattern="[0-9]{10}"
-                                required>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="9876543210"
+                                pattern="[0-9]{10}" required>
                         </td>
                     </tr>
                     <tr>
@@ -90,7 +104,8 @@
                         <!-- Number Input -->
                         <td>Age:</td>
                         <td>
-                            <input type="number" id="age" name="age" class="form-control" value="0" min="0" max="100" step="1" required>
+                            <input type="number" id="age" name="age" class="form-control" value="0" min="0" max="100"
+                                step="1" required>
                         </td>
                     </tr>
                     <tr>
@@ -131,7 +146,7 @@
                         <!-- File Input -->
                         <td>Resume:</td>
                         <td>
-                            <input type="file" id="resume" name="resume" class="form-control" accept="image/*">
+                            <input type="file" id="resume" name="resume" class="form-control">
                         </td>
                     </tr>
                     <tr>
@@ -143,8 +158,8 @@
                     </tr>
                     <tr>
                         <!-- Submit Input -->
-                        <td>Submit:</td>
-                        <td>
+                        <!-- <td>Submit:</td> -->
+                        <td colspan="2" align="center">
                             <input type="submit" value="Submit Form" class="form-control">
                         </td>
                     </tr>
@@ -155,9 +170,57 @@
 
     </div>
 
+    <div>
+        <!-- rowspan and colspan example -->
+        <h2>Complex Table</h2>
+        <table border="2" width="80%" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th colspan="3">Column1</th>
+                    <!-- <th>Column2</th> -->
+                    <!-- <th>Column3</th> -->
+                    <th>Column4</th>
+                    <th>Column5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" colspan="2">1</td>
+                    <!-- <td>2</td> -->
+                    <td>3</td>
+                    <td>4</td>
+                    <td rowspan="3">5</td>
+                </tr>
+                <tr>
+                    <!-- <td>1</td> -->
+                    <!-- <td>2</td> -->
+                    <td colspan="2">3</td>
+                    <!-- <td>4</td> -->
+                    <!-- <td>5</td> -->
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="2" colspan="3">2</td>
+                    <!-- <td>3</td> -->
+                    <!-- <td>4</td> -->
+                    <!-- <td>5</td> -->
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <!-- <td>2</td> -->
+                    <!-- <td>3</td> -->
+                    <!-- <td>4</td> -->
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
     <br>
     <!-- Footer -->
-    <footer>Made by KB</footer>
+    <footer>
+        <p>Made by KB</p>
+    </footer>
 
 </body>
 
