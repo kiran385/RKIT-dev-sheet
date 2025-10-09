@@ -58,14 +58,14 @@ namespace StudentManagementSystem
                 return new List<Student>();
             }
             string data = File.ReadAllText(fileName);
-            return JsonSerializer.Deserialize<List<Student>>(data) ?? new List<Student>();
+            return JsonSerializer.Deserialize<List<Student>>(data);
         }
 
         public static void DeleteFromFile(Student student)
         {
             List<Student> existingStudents = LoadFromFile();
             existingStudents.RemoveAll(s => s.StudentId == student.StudentId);
-            string data = JsonSerializer.Serialize(existingStudents, new JsonSerializerOptions { WriteIndented = true });
+            string data = JsonSerializer.Serialize(existingStudents);
             File.WriteAllText(fileName, data);
         }
     }

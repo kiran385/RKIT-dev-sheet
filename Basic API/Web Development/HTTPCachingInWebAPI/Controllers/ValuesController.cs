@@ -9,13 +9,12 @@ namespace HTTPCachingInWebAPI.Controllers
 {
     public class ValuesController : ApiController
     {
-        [HttpGet]
         [Route("api/values")]
         public HttpResponseMessage Get()
         {
-            var data = "This is cached data";
+            string data = "This is cached data";
 
-            var response = Request.CreateResponse(HttpStatusCode.OK, data);
+            HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, data);
 
             // Add Cache-Control header
             response.Headers.CacheControl = new CacheControlHeaderValue()
@@ -27,7 +26,6 @@ namespace HTTPCachingInWebAPI.Controllers
             return response;
         }
 
-        //[HttpGet]
         //[Route("new-values")]
         //public IEnumerable<string> Get()
         //{

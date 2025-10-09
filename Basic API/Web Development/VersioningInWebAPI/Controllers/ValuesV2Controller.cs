@@ -7,19 +7,13 @@ namespace VersioningInWebAPI.Controllers
     {
         static List<string> values = new List<string>()
         {
-            "value100","value101","value102"
+            "value100 from V2","value101 from V2","value102 from V2"
         };
 
         //[Route("api/v2/values")]
         public IEnumerable<string> Get()
         {
             return values;
-        }
-
-        //[Route("api/v2/values/{id}")]
-        public string Get(int id)
-        {
-            return values[id];
         }
     }
 }

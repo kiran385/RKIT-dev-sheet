@@ -1,15 +1,16 @@
 ﻿using Swashbuckle.Application;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
-namespace CORSInWebAPI
+namespace CORSinWebAPI
 {
     public static class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
-
             // Enable CORS globally
             //var cors = new EnableCorsAttribute("https://www.facebook.com/", "*", "*"); // Allow only facebook domain to access data
             var cors = new EnableCorsAttribute("http://127.0.0.1:5500", "*", "POST"); // Allow localhost to access data with POST method
@@ -31,7 +32,6 @@ namespace CORSInWebAPI
                 constraints: null,
                 handler: new RedirectHandler(message => message.RequestUri.ToString(), "swagger")
             );
-
         }
     }
 }

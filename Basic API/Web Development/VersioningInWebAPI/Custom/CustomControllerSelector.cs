@@ -1,13 +1,16 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Web;
-using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Dispatcher;
+using System.Web.Http;
+using System.Web.Http.Routing;
+using System.Collections.Specialized;
 
-namespace WebAPI.Custom
+namespace VersioningInWebAPI.Custom
 {
-    // Derive from the DefaultHttpControllerSelector class
     public class CustomControllerSelector : DefaultHttpControllerSelector
     {
         private HttpConfiguration _config;
@@ -19,16 +22,17 @@ namespace WebAPI.Custom
         public override HttpControllerDescriptor SelectController(HttpRequestMessage request)
         {
             // Get all the available Web API controllers
-            var controllers = GetControllerMapping();
+            IDictionary<string, HttpControllerDescriptor> controllers = GetControllerMapping();
+
             // Get the controller name and parameter values from the request URI
-            var routeData = request.GetRouteData();
+            IHttpRouteData routeData = request.GetRouteData();
 
             // Get the controller name from route data.
-            var controllerName = "Values";
+            string controllerName = routeData.Values["controller"].ToString();
 
             // Default version number to 1
             string versionNumber = "1";
-            var versionQueryString = HttpUtility.ParseQueryString(request.RequestUri.Query);
+            NameValueCollection versionQueryString = HttpUtility.ParseQueryString(request.RequestUri.Query);
             if (versionQueryString["v"] != null)
             {
                 versionNumber = versionQueryString["v"];

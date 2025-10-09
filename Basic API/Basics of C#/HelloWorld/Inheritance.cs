@@ -10,9 +10,9 @@ namespace HelloWorld
     {
         string name;
         int age;
-        public Employee() 
+        public Employee()
         {
-            //Console.WriteLine("Parent class constructor");
+            Console.WriteLine("Parent class constructor");
         }
         public Employee(string name, int age)
         {
@@ -31,7 +31,7 @@ namespace HelloWorld
         private float yearlySalary;
         public FullTime(string name, int age) : base(name,age)
         {
-            //Console.WriteLine("Child class constructor");
+            Console.WriteLine("Child class constructor");
         }
         public float YearlySalary
         {
@@ -45,7 +45,7 @@ namespace HelloWorld
         private float hourlySalary;
         public PartTime(string name, int age) : base(name,age)
         {
-            //Console.WriteLine("Child class constructor");
+            Console.WriteLine("Child class constructor");
         }
         public float HourlySalary
         {

@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAPIDemo</name>
+    </assembly>
+    <members>
+        <member name="T:WebAPIDemo.SwaggerConfig">
+            <summary>
+            Contains Register method
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.SwaggerConfig.Register">
+            <summary>
+            Configure swagger UI
+            </summary>
+        </member>
+        <member name="T:WebAPIDemo.WebApiConfig">
+            <summary>
+            Contains route details and global CORS setting
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Configures routing and global CORS. This method is called at application startup
+            </summary>
+            <param name="config">The HTTP configuration object</param>
+        </member>
+        <member name="T:WebAPIDemo.BAL.JWTAuthorizationFilter">
+            <summary>
+            Custom authorization filter that validates JWT token and checks for allowed user roles.
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.BAL.JWTAuthorizationFilter.#ctor(System.String[])">
+            <summary>
+            Initializes the JWTAuthorizationFilter with the allowed roles.
+            </summary>
+            <param name="roles">A list of roles that are allowed to access methods</param>
+        </member>
+        <member name="M:WebAPIDemo.BAL.JWTAuthorizationFilter.OnAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Checks the presence and validity of the JWT token and validates user roles.
+            </summary>
+            <param name="actionContext">contains all HTTP-specific information about the request</param>
+        </member>
+        <member name="T:WebAPIDemo.BAL.JWTHandler">
+            <summary>
+            Contains methods for generate JWT token and validate JWT token 
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.BAL.JWTHandler.ValidateJwtToken(System.String)">
+            <summary>
+            Validates the JWT token and returns the ClaimsPrincipal if valid.
+            </summary>
+            <param name="token">JWT token</param>
+            <returns>Claim principal given in the token</returns>
+        </member>
+        <member name="M:WebAPIDemo.BAL.JWTHandler.GenerateJwtToken(System.String,System.String)">
+            <summary>
+            Generates new JWT token
+            </summary>
+            <param name="username">username</param>
+            <param name="role">role for user</param>
+            <returns>JWT token</returns>
+        </member>
+        <member name="T:WebAPIDemo.BAL.ValidateUser">
+            <summary>
+            ValidateUser class contains method for user credential validation
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.BAL.ValidateUser.ValidateUserCredentials(System.String,System.String)">
+            <summary>
+            Validate user credentials
+            </summary>
+            <param name="username">username</param>
+            <param name="password">password</param>
+            <returns>Role of user</returns>
+        </member>
+        <member name="T:WebAPIDemo.Controllers.AuthController">
+            <summary>
+            Controller which contains method for login 
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.AuthController.Login(WebAPIDemo.Models.Login)">
+            <summary>
+            Method for logged user in
+            </summary>
+            <param name="model">Modal contains username and password</param>
+            <returns>JWT token if credentials are valid</returns>
+        </member>
+        <member name="T:WebAPIDemo.Controllers.StudentsV2Controller">
+            <summary>
+            Student controller which contains method for get student data
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.StudentsV2Controller.GetNewStudentList">
+            <summary>
+            Get student data from cache if available or send request to server for get fresh data
+            </summary>
+            <returns>List of student</returns>
+        </member>
+        <member name="T:WebAPIDemo.Controllers.StudentsV1Controller">
+            <summary>
+            Student controller which contains methods to view, add and delete student
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.StudentsV1Controller.GetAllStudents">
+            <summary>
+            Method for get all student data
+            </summary>
+            <returns>List of student data</returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.StudentsV1Controller.GetStudentById(System.Int32)">
+            <summary>
+            Method for get student by id
+            </summary>
+            <param name="id">student id</param>
+            <returns>student data</returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.StudentsV1Controller.Post(WebAPIDemo.Models.Student)">
+            <summary>
+            Method for add new student to database
+            </summary>
+            <param name="student">student id, name, cgpa and academic year</param>
+            <returns>Success message if student added to database</returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.StudentsV1Controller.DeleteStudent(System.Int32)">
+            <summary>
+            Method for delete student by id
+            </summary>
+            <param name="id">student id</param>
+            <returns>Appropriate message if student deleted or not</returns>
+        </member>
+        <member name="T:WebAPIDemo.WebApiApplication">
+            <summary>
+            Handles application-level events
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.WebApiApplication.Application_Start">
+            <summary>
+            Executed when the application starts
+            Registers Web API configuration
+            </summary>
+        </member>
+        <member name="T:WebAPIDemo.Models.Login">
+            <summary>
+            Login modal with username and password
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Login.Username">
+            <summary>
+            Username of user
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Login.Password">
+            <summary>
+            Password of user
+            </summary>
+        </member>
+        <member name="T:WebAPIDemo.Models.Student">
+            <summary>
+            Student modal
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Student.Id">
+            <summary>
+            Student id
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Student.Name">
+            <summary>
+            Student name
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Student.CGPA">
+            <summary>
+            Student CGPA
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Student.AdmissionYear">
+            <summary>
+            Admission year of student
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,5 +1,4 @@
-﻿using AuthenticationInWebAPI.Filters;
-using Swashbuckle.Application;
+﻿using Swashbuckle.Application;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +10,6 @@ namespace AuthenticationInWebAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
-
-            // Register the custom authentication filter globally
-            config.Filters.Add(new BasicAuthenticationFilter());
-
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -25,7 +19,6 @@ namespace AuthenticationInWebAPI
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            // Swagger Redirect Route (Swagger UI configuration)
             config.Routes.MapHttpRoute(
                 name: "SwaggerRedirect",
                 routeTemplate: "",
@@ -33,7 +26,6 @@ namespace AuthenticationInWebAPI
                 constraints: null,
                 handler: new RedirectHandler(message => message.RequestUri.ToString(), "swagger")
             );
-
         }
     }
 }

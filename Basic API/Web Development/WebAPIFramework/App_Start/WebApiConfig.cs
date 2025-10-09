@@ -1,7 +1,4 @@
 ﻿using Swashbuckle.Application;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web.Http;
 
 namespace WebAPIFramework
@@ -10,8 +7,6 @@ namespace WebAPIFramework
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
-
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -21,7 +16,6 @@ namespace WebAPIFramework
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            // Swagger Redirect Route (Swagger UI configuration)
             config.Routes.MapHttpRoute(
                 name: "SwaggerRedirect",
                 routeTemplate: "",

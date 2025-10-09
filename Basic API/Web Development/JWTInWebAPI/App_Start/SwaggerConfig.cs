@@ -1,11 +1,11 @@
 using System.Web.Http;
 using WebActivatorEx;
-using JWTInWebAPI;
+using JWTinWebAPI;
 using Swashbuckle.Application;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace JWTInWebAPI
+namespace JWTinWebAPI
 {
     public class SwaggerConfig
     {
@@ -32,7 +32,7 @@ namespace JWTInWebAPI
                         // hold additional metadata for an API. Version and title are required but you can also provide
                         // additional fields by chaining methods off SingleApiVersion.
                         //
-                        c.SingleApiVersion("v1", "JWTInWebAPI");
+                        c.SingleApiVersion("v1", "JWTinWebAPI");
 
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //
@@ -62,10 +62,10 @@ namespace JWTInWebAPI
                         //    .Description("Basic HTTP Authentication");
                         //
 						// NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
-                        c.ApiKey("Authentication")
-                            .Description("Authentication using JWT")
-                            .Name("Authorization")
-                            .In("header");
+                        //c.ApiKey("apiKey")
+                        //    .Description("API Key Authentication")
+                        //    .Name("apiKey")
+                        //    .In("header");
                         //
                         //c.OAuth2("oauth2")
                         //    .Description("OAuth2 Implicit Grant")

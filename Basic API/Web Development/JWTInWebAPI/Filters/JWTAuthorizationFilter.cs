@@ -41,7 +41,7 @@ namespace JWTInWebAPI.Filters
                     actionContext.Response = actionContext.Request.CreateErrorResponse(HttpStatusCode.Unauthorized, "Invalid or expired token.");
                     return;
                 }
-                    
+
                 // Extract role from the token
                 string userRole = principal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role).Value;
                 if (string.IsNullOrEmpty(userRole))

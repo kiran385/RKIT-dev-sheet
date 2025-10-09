@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Security.Principal;
 using System.Text;
 using System.Threading;
@@ -15,8 +16,14 @@ namespace AuthenticationInWebAPI.Filters
     {
         public override void OnAuthorization(HttpActionContext actionContext)
         {
+            // Allow anonymous access if the action has the AllowAnonymousAttribute applied
+            if (actionContext.ActionDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Count > 0)
+            {
+                return;
+            }
+
             // Retrieve the Authorization header from the request
-            var authHeader = actionContext.Request.Headers.Authorization;
+            AuthenticationHeaderValue authHeader = actionContext.Request.Headers.Authorization;
             if (authHeader == null || authHeader.Scheme != "Basic")
             {
                 // Handle unauthorized access if no valid Basic Authentication header is found
@@ -27,8 +34,8 @@ namespace AuthenticationInWebAPI.Filters
             try
             {
                 // Decode the Base64-encoded credentials from the Authorization header
-                var credentials = Encoding.UTF8.GetString(Convert.FromBase64String(authHeader.Parameter));
-                var parts = credentials.Split(':');
+                string credentials = Encoding.UTF8.GetString(Convert.FromBase64String(authHeader.Parameter));
+                string[] parts = credentials.Split(':');
 
                 // Ensure that the credentials are properly formatted (username:password)
                 if (parts.Length != 2)
@@ -37,8 +44,8 @@ namespace AuthenticationInWebAPI.Filters
                     return;
                 }
 
-                var username = parts[0];
-                var password = parts[1];
+                string username = parts[0];
+                string password = parts[1];
 
                 // Validate the user credentials and retrieve associated roles
                 if (!IsAuthorizedUser(username, password, out string[] roles))
@@ -48,8 +55,8 @@ namespace AuthenticationInWebAPI.Filters
                 }
 
                 // Create and set the Principal for the authenticated user
-                var identity = new GenericIdentity(username);
-                var principal = new GenericPrincipal(identity, roles);
+                GenericIdentity identity = new GenericIdentity(username);
+                GenericPrincipal principal = new GenericPrincipal(identity, roles);
                 Thread.CurrentPrincipal = principal;
 
                 // Also set the Principal for the current HTTP context
@@ -69,14 +76,14 @@ namespace AuthenticationInWebAPI.Filters
         {
             roles = null;
 
-            // Simulated user database (replace with actual database or service call)
+            // User database
             var users = new[]
             {
                 new { Username = "admin", Password = "password", Roles = new[] { "Admin" } },
                 new { Username = "user", Password = "password", Roles = new[] { "User" } }
             };
 
-            // Find a matching user in the simulated database
+            // Find a matching user in the database
             var user = Array.Find(users, u => u.Username == username && u.Password == password);
 
             if (user != null)

@@ -10,8 +10,6 @@ namespace HTTPCachingInWebAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
-
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -21,6 +19,7 @@ namespace HTTPCachingInWebAPI
                 defaults: new { id = RouteParameter.Optional }
             );
 
+
             config.Routes.MapHttpRoute(
                 name: "SwaggerRedirect",
                 routeTemplate: "",
@@ -28,7 +27,6 @@ namespace HTTPCachingInWebAPI
                 constraints: null,
                 handler: new RedirectHandler(message => message.RequestUri.ToString(), "swagger")
             );
-
         }
     }
 }

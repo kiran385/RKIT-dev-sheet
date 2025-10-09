@@ -15,11 +15,5 @@ namespace VersioningInWebAPI.Controllers
         {
             return values;
         }
-
-        //[Route("api/v1/values/{id}")]
-        public string Get(int id)
-        {
-            return values[id];
-        }
     }
 }

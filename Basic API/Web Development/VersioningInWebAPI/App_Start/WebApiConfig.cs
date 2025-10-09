@@ -1,7 +1,7 @@
 ﻿using Swashbuckle.Application;
 using System.Web.Http;
 using System.Web.Http.Dispatcher;
-using WebAPI.Custom;
+using VersioningInWebAPI.Custom;
 
 namespace VersioningInWebAPI
 {
@@ -9,12 +9,15 @@ namespace VersioningInWebAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
-
             // Web API routes
             config.MapHttpAttributeRoutes();
 
-            // Swagger Redirect Route (Swagger UI configuration)
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
+
             config.Routes.MapHttpRoute(
                 name: "SwaggerRedirect",
                 routeTemplate: "",
@@ -23,12 +26,11 @@ namespace VersioningInWebAPI
                 handler: new RedirectHandler(message => message.RequestUri.ToString(), "swagger")
             );
 
-
             // Convension based URI versioning
             //config.Routes.MapHttpRoute(
             //    name: "Version1",
             //    routeTemplate: "api/v1/values/{id}",
-            //    defaults: new { id = RouteParameter.Optional ,controller = "ValuesV1"}
+            //    defaults: new { id = RouteParameter.Optional, controller = "ValuesV1" }
             //);
 
             //config.Routes.MapHttpRoute(
@@ -37,13 +39,6 @@ namespace VersioningInWebAPI
             //    defaults: new { id = RouteParameter.Optional, controller = "ValuesV2" }
             //);
 
-
-            // Used for query string versioning
-            config.Routes.MapHttpRoute(
-                name: "DefaultRoute",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
             config.Services.Replace(typeof(IHttpControllerSelector), new CustomControllerSelector(config));
         }
     }
