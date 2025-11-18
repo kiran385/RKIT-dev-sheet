@@ -1,0 +1,242 @@
+2025-10-15 13:21:09.233 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-15 13:21:09.344 +05:30 [DBG] Hosting starting
+2025-10-15 13:21:09.601 +05:30 [INF] Now listening on: http://localhost:5124
+2025-10-15 13:21:09.601 +05:30 [DBG] Loaded hosting startup assembly Logging
+2025-10-15 13:21:09.602 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-15 13:21:09.602 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-15 13:21:09.603 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-15 13:21:09.604 +05:30 [INF] Hosting environment: Development
+2025-10-15 13:21:09.604 +05:30 [INF] Content root path: C:\Users\Kiran.B\Desktop\Training 2025\DotNET Core\Logging
+2025-10-15 13:21:09.604 +05:30 [DBG] Hosting started
+2025-10-15 13:21:09.634 +05:30 [DBG] Connection id "0HNGBNUDC6E05" received FIN.
+2025-10-15 13:21:09.634 +05:30 [DBG] Connection id "0HNGBNUDC6E06" received FIN.
+2025-10-15 13:21:09.650 +05:30 [DBG] Connection id "0HNGBNUDC6E05" accepted.
+2025-10-15 13:21:09.650 +05:30 [DBG] Connection id "0HNGBNUDC6E06" accepted.
+2025-10-15 13:21:09.651 +05:30 [DBG] Connection id "0HNGBNUDC6E06" started.
+2025-10-15 13:21:09.651 +05:30 [DBG] Connection id "0HNGBNUDC6E05" started.
+2025-10-15 13:21:09.672 +05:30 [DBG] Connection id "0HNGBNUDC6E06" sending FIN because: "The client closed the connection."
+2025-10-15 13:21:09.672 +05:30 [DBG] Connection id "0HNGBNUDC6E05" sending FIN because: "The client closed the connection."
+2025-10-15 13:21:09.676 +05:30 [DBG] Connection id "0HNGBNUDC6E05" disconnecting.
+2025-10-15 13:21:09.677 +05:30 [DBG] Connection id "0HNGBNUDC6E06" disconnecting.
+2025-10-15 13:21:09.684 +05:30 [DBG] Connection id "0HNGBNUDC6E05" stopped.
+2025-10-15 13:21:09.684 +05:30 [DBG] Connection id "0HNGBNUDC6E06" stopped.
+2025-10-15 13:21:09.867 +05:30 [DBG] Connection id "0HNGBNUDC6E07" accepted.
+2025-10-15 13:21:09.867 +05:30 [DBG] Connection id "0HNGBNUDC6E07" started.
+2025-10-15 13:21:09.902 +05:30 [DBG] Connection id "0HNGBNUDC6E08" accepted.
+2025-10-15 13:21:09.902 +05:30 [DBG] Connection id "0HNGBNUDC6E08" started.
+2025-10-15 13:21:09.968 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/swagger/index.html - -
+2025-10-15 13:21:10.002 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-15 13:21:10.032 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-15 13:21:10.032 +05:30 [DBG] Request did not match any endpoints
+2025-10-15 13:21:10.192 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-15 13:21:10.331 +05:30 [DBG] Connection id "0HNGBNUDC6E09" accepted.
+2025-10-15 13:21:10.335 +05:30 [DBG] Connection id "0HNGBNUDC6E09" started.
+2025-10-15 13:21:10.347 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/_framework/aspnetcore-browser-refresh.js - -
+2025-10-15 13:21:10.347 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/_vs/browserLink - -
+2025-10-15 13:21:10.353 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-15 13:21:10.353 +05:30 [DBG] Connection id "0HNGBNUDC6E07" completed keep alive response.
+2025-10-15 13:21:10.355 +05:30 [DBG] Connection id "0HNGBNUDC6E09" completed keep alive response.
+2025-10-15 13:21:10.357 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/swagger/index.html - - - 200 - text/html;charset=utf-8 395.7373ms
+2025-10-15 13:21:10.357 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 8.3985ms
+2025-10-15 13:21:10.391 +05:30 [DBG] Connection id "0HNGBNUDC6E08" completed keep alive response.
+2025-10-15 13:21:10.391 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.0558ms
+2025-10-15 13:21:10.447 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/swagger/v1/swagger.json - -
+2025-10-15 13:21:10.448 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-15 13:21:10.448 +05:30 [DBG] Request did not match any endpoints
+2025-10-15 13:21:10.554 +05:30 [DBG] Connection id "0HNGBNUDC6E08" completed keep alive response.
+2025-10-15 13:21:10.554 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 107.0729ms
+2025-10-15 13:21:21.904 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/api/Log - -
+2025-10-15 13:21:21.909 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Log'
+2025-10-15 13:21:21.913 +05:30 [DBG] Endpoint 'Logging.Controllers.LogController.Get (Logging)' with route pattern 'api/Log' is valid for the request path '/api/Log'
+2025-10-15 13:21:21.913 +05:30 [DBG] Request matched endpoint 'Logging.Controllers.LogController.Get (Logging)'
+2025-10-15 13:21:21.916 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-15 13:21:21.918 +05:30 [INF] Executing endpoint 'Logging.Controllers.LogController.Get (Logging)'
+2025-10-15 13:21:21.938 +05:30 [INF] Route matched with {action = "Get", controller = "Log"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller Logging.Controllers.LogController (Logging).
+2025-10-15 13:21:21.939 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-15 13:21:21.940 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-15 13:21:21.940 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-15 13:21:21.940 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-15 13:21:21.940 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-15 13:21:21.941 +05:30 [DBG] Executing controller factory for controller Logging.Controllers.LogController (Logging)
+2025-10-15 13:21:21.942 +05:30 [DBG] Executed controller factory for controller Logging.Controllers.LogController (Logging)
+2025-10-15 13:21:21.943 +05:30 [INF] LogController Get method endpoint accesses
+2025-10-15 13:21:21.943 +05:30 [WRN] This is warning message
+2025-10-15 13:21:22.025 +05:30 [ERR] An error occured: Sample exception
+2025-10-15 13:21:22.028 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-15 13:21:22.029 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-10-15 13:21:22.029 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-15 13:21:22.030 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-15 13:21:22.030 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-10-15 13:21:22.031 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-10-15 13:21:22.035 +05:30 [INF] Executed action Logging.Controllers.LogController.Get (Logging) in 91.6231ms
+2025-10-15 13:21:22.035 +05:30 [INF] Executed endpoint 'Logging.Controllers.LogController.Get (Logging)'
+2025-10-15 13:21:22.035 +05:30 [DBG] Connection id "0HNGBNUDC6E08" completed keep alive response.
+2025-10-15 13:21:22.035 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/api/Log - - - 500 - text/plain;+charset=utf-8 131.2137ms
+2025-10-15 13:21:48.917 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-15 13:21:49.053 +05:30 [DBG] Hosting starting
+2025-10-15 13:21:49.273 +05:30 [INF] Now listening on: http://localhost:5124
+2025-10-15 13:21:49.273 +05:30 [DBG] Loaded hosting startup assembly Logging
+2025-10-15 13:21:49.274 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-15 13:21:49.276 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-15 13:21:49.277 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-15 13:21:49.278 +05:30 [INF] Hosting environment: Development
+2025-10-15 13:21:49.278 +05:30 [INF] Content root path: C:\Users\Kiran.B\Desktop\Training 2025\DotNET Core\Logging
+2025-10-15 13:21:49.278 +05:30 [DBG] Hosting started
+2025-10-15 13:21:49.369 +05:30 [DBG] Connection id "0HNGBNUP7285I" accepted.
+2025-10-15 13:21:49.369 +05:30 [DBG] Connection id "0HNGBNUP7285H" accepted.
+2025-10-15 13:21:49.371 +05:30 [DBG] Connection id "0HNGBNUP7285H" received FIN.
+2025-10-15 13:21:49.372 +05:30 [DBG] Connection id "0HNGBNUP7285H" started.
+2025-10-15 13:21:49.372 +05:30 [DBG] Connection id "0HNGBNUP7285I" started.
+2025-10-15 13:21:49.373 +05:30 [DBG] Connection id "0HNGBNUP7285I" received FIN.
+2025-10-15 13:21:49.395 +05:30 [DBG] Connection id "0HNGBNUP7285H" sending FIN because: "The client closed the connection."
+2025-10-15 13:21:49.395 +05:30 [DBG] Connection id "0HNGBNUP7285I" sending FIN because: "The client closed the connection."
+2025-10-15 13:21:49.399 +05:30 [DBG] Connection id "0HNGBNUP7285I" disconnecting.
+2025-10-15 13:21:49.399 +05:30 [DBG] Connection id "0HNGBNUP7285H" disconnecting.
+2025-10-15 13:21:49.409 +05:30 [DBG] Connection id "0HNGBNUP7285H" stopped.
+2025-10-15 13:21:49.409 +05:30 [DBG] Connection id "0HNGBNUP7285I" stopped.
+2025-10-15 13:21:49.624 +05:30 [DBG] Connection id "0HNGBNUP7285J" accepted.
+2025-10-15 13:21:49.624 +05:30 [DBG] Connection id "0HNGBNUP7285J" started.
+2025-10-15 13:21:49.626 +05:30 [DBG] Connection id "0HNGBNUP7285K" accepted.
+2025-10-15 13:21:49.626 +05:30 [DBG] Connection id "0HNGBNUP7285K" started.
+2025-10-15 13:21:49.716 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/swagger/index.html - -
+2025-10-15 13:21:49.757 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-15 13:21:49.804 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-15 13:21:49.805 +05:30 [DBG] Request did not match any endpoints
+2025-10-15 13:21:50.028 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-15 13:21:50.155 +05:30 [DBG] Connection id "0HNGBNUP7285L" accepted.
+2025-10-15 13:21:50.155 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/_framework/aspnetcore-browser-refresh.js - -
+2025-10-15 13:21:50.156 +05:30 [DBG] Connection id "0HNGBNUP7285L" started.
+2025-10-15 13:21:50.156 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/_vs/browserLink - -
+2025-10-15 13:21:50.158 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-15 13:21:50.158 +05:30 [DBG] Connection id "0HNGBNUP7285J" completed keep alive response.
+2025-10-15 13:21:50.171 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/swagger/index.html - - - 200 - text/html;charset=utf-8 453.8250ms
+2025-10-15 13:21:50.171 +05:30 [DBG] Connection id "0HNGBNUP7285K" completed keep alive response.
+2025-10-15 13:21:50.172 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 16.5405ms
+2025-10-15 13:21:50.192 +05:30 [DBG] Connection id "0HNGBNUP7285L" completed keep alive response.
+2025-10-15 13:21:50.192 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.2613ms
+2025-10-15 13:21:50.275 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/swagger/v1/swagger.json - -
+2025-10-15 13:21:50.275 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-15 13:21:50.275 +05:30 [DBG] Request did not match any endpoints
+2025-10-15 13:21:50.368 +05:30 [DBG] Connection id "0HNGBNUP7285L" completed keep alive response.
+2025-10-15 13:21:50.368 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.0882ms
+2025-10-15 13:22:10.698 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-15 13:22:10.820 +05:30 [DBG] Hosting starting
+2025-10-15 13:22:11.017 +05:30 [INF] Now listening on: http://localhost:5124
+2025-10-15 13:22:11.018 +05:30 [DBG] Loaded hosting startup assembly Logging
+2025-10-15 13:22:11.018 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-15 13:22:11.018 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-15 13:22:11.019 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-15 13:22:11.020 +05:30 [INF] Hosting environment: Development
+2025-10-15 13:22:11.020 +05:30 [INF] Content root path: C:\Users\Kiran.B\Desktop\Training 2025\DotNET Core\Logging
+2025-10-15 13:22:11.020 +05:30 [DBG] Hosting started
+2025-10-15 13:22:11.259 +05:30 [DBG] Connection id "0HNGBNUVNSVKD" received FIN.
+2025-10-15 13:22:11.259 +05:30 [DBG] Connection id "0HNGBNUVNSVKC" received FIN.
+2025-10-15 13:22:11.272 +05:30 [DBG] Connection id "0HNGBNUVNSVKC" accepted.
+2025-10-15 13:22:11.275 +05:30 [DBG] Connection id "0HNGBNUVNSVKD" accepted.
+2025-10-15 13:22:11.278 +05:30 [DBG] Connection id "0HNGBNUVNSVKC" started.
+2025-10-15 13:22:11.278 +05:30 [DBG] Connection id "0HNGBNUVNSVKD" started.
+2025-10-15 13:22:11.321 +05:30 [DBG] Connection id "0HNGBNUVNSVKC" sending FIN because: "The client closed the connection."
+2025-10-15 13:22:11.321 +05:30 [DBG] Connection id "0HNGBNUVNSVKD" sending FIN because: "The client closed the connection."
+2025-10-15 13:22:11.324 +05:30 [DBG] Connection id "0HNGBNUVNSVKD" disconnecting.
+2025-10-15 13:22:11.324 +05:30 [DBG] Connection id "0HNGBNUVNSVKC" disconnecting.
+2025-10-15 13:22:11.339 +05:30 [DBG] Connection id "0HNGBNUVNSVKC" stopped.
+2025-10-15 13:22:11.339 +05:30 [DBG] Connection id "0HNGBNUVNSVKD" stopped.
+2025-10-15 13:22:11.530 +05:30 [DBG] Connection id "0HNGBNUVNSVKE" accepted.
+2025-10-15 13:22:11.531 +05:30 [DBG] Connection id "0HNGBNUVNSVKE" started.
+2025-10-15 13:22:11.533 +05:30 [DBG] Connection id "0HNGBNUVNSVKF" accepted.
+2025-10-15 13:22:11.537 +05:30 [DBG] Connection id "0HNGBNUVNSVKF" started.
+2025-10-15 13:22:11.612 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/swagger/index.html - -
+2025-10-15 13:22:11.651 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-15 13:22:11.674 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-15 13:22:11.674 +05:30 [DBG] Request did not match any endpoints
+2025-10-15 13:22:11.821 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-15 13:22:11.948 +05:30 [DBG] Connection id "0HNGBNUVNSVKG" accepted.
+2025-10-15 13:22:11.948 +05:30 [DBG] Connection id "0HNGBNUVNSVKG" started.
+2025-10-15 13:22:11.949 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/_framework/aspnetcore-browser-refresh.js - -
+2025-10-15 13:22:11.957 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-15 13:22:11.958 +05:30 [DBG] Connection id "0HNGBNUVNSVKF" completed keep alive response.
+2025-10-15 13:22:11.949 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/_vs/browserLink - -
+2025-10-15 13:22:11.963 +05:30 [DBG] Connection id "0HNGBNUVNSVKE" completed keep alive response.
+2025-10-15 13:22:11.967 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 14.1154ms
+2025-10-15 13:22:11.968 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/swagger/index.html - - - 200 - text/html;charset=utf-8 352.9952ms
+2025-10-15 13:22:11.996 +05:30 [DBG] Connection id "0HNGBNUVNSVKG" completed keep alive response.
+2025-10-15 13:22:11.996 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.8541ms
+2025-10-15 13:22:12.072 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/swagger/v1/swagger.json - -
+2025-10-15 13:22:12.073 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-15 13:22:12.073 +05:30 [DBG] Request did not match any endpoints
+2025-10-15 13:22:12.166 +05:30 [DBG] Connection id "0HNGBNUVNSVKG" completed keep alive response.
+2025-10-15 13:22:12.166 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.7597ms
+2025-10-15 13:23:53.436 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-15 13:23:53.572 +05:30 [DBG] Hosting starting
+2025-10-15 13:23:53.793 +05:30 [INF] Now listening on: http://localhost:5124
+2025-10-15 13:23:53.793 +05:30 [DBG] Loaded hosting startup assembly Logging
+2025-10-15 13:23:53.794 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-15 13:23:53.794 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-15 13:23:53.794 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-15 13:23:53.795 +05:30 [INF] Hosting environment: Development
+2025-10-15 13:23:53.795 +05:30 [INF] Content root path: C:\Users\Kiran.B\Desktop\Training 2025\DotNET Core\Logging
+2025-10-15 13:23:53.795 +05:30 [DBG] Hosting started
+2025-10-15 13:23:54.133 +05:30 [DBG] Connection id "0HNGBNVUCVJCG" received FIN.
+2025-10-15 13:23:54.133 +05:30 [DBG] Connection id "0HNGBNVUCVJCH" accepted.
+2025-10-15 13:23:54.135 +05:30 [DBG] Connection id "0HNGBNVUCVJCH" received FIN.
+2025-10-15 13:23:54.138 +05:30 [DBG] Connection id "0HNGBNVUCVJCG" accepted.
+2025-10-15 13:23:54.139 +05:30 [DBG] Connection id "0HNGBNVUCVJCG" started.
+2025-10-15 13:23:54.145 +05:30 [DBG] Connection id "0HNGBNVUCVJCH" started.
+2025-10-15 13:23:54.179 +05:30 [DBG] Connection id "0HNGBNVUCVJCH" sending FIN because: "The client closed the connection."
+2025-10-15 13:23:54.179 +05:30 [DBG] Connection id "0HNGBNVUCVJCG" sending FIN because: "The client closed the connection."
+2025-10-15 13:23:54.183 +05:30 [DBG] Connection id "0HNGBNVUCVJCH" disconnecting.
+2025-10-15 13:23:54.184 +05:30 [DBG] Connection id "0HNGBNVUCVJCG" disconnecting.
+2025-10-15 13:23:54.192 +05:30 [DBG] Connection id "0HNGBNVUCVJCG" stopped.
+2025-10-15 13:23:54.192 +05:30 [DBG] Connection id "0HNGBNVUCVJCH" stopped.
+2025-10-15 13:23:54.389 +05:30 [DBG] Connection id "0HNGBNVUCVJCI" accepted.
+2025-10-15 13:23:54.389 +05:30 [DBG] Connection id "0HNGBNVUCVJCI" started.
+2025-10-15 13:23:54.391 +05:30 [DBG] Connection id "0HNGBNVUCVJCJ" accepted.
+2025-10-15 13:23:54.391 +05:30 [DBG] Connection id "0HNGBNVUCVJCJ" started.
+2025-10-15 13:23:54.471 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/swagger/index.html - -
+2025-10-15 13:23:54.499 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-15 13:23:54.520 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-15 13:23:54.521 +05:30 [DBG] Request did not match any endpoints
+2025-10-15 13:23:54.667 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-15 13:23:54.790 +05:30 [DBG] Connection id "0HNGBNVUCVJCK" accepted.
+2025-10-15 13:23:54.790 +05:30 [DBG] Connection id "0HNGBNVUCVJCK" started.
+2025-10-15 13:23:54.791 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-15 13:23:54.791 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/_framework/aspnetcore-browser-refresh.js - -
+2025-10-15 13:23:54.792 +05:30 [DBG] Connection id "0HNGBNVUCVJCI" completed keep alive response.
+2025-10-15 13:23:54.794 +05:30 [DBG] Connection id "0HNGBNVUCVJCJ" completed keep alive response.
+2025-10-15 13:23:54.794 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/swagger/index.html - - - 200 - text/html;charset=utf-8 325.9648ms
+2025-10-15 13:23:54.794 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 3.2731ms
+2025-10-15 13:23:54.791 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/_vs/browserLink - -
+2025-10-15 13:23:54.823 +05:30 [DBG] Connection id "0HNGBNVUCVJCK" completed keep alive response.
+2025-10-15 13:23:54.823 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.9897ms
+2025-10-15 13:23:54.907 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/swagger/v1/swagger.json - -
+2025-10-15 13:23:54.907 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-15 13:23:54.908 +05:30 [DBG] Request did not match any endpoints
+2025-10-15 13:23:55.003 +05:30 [DBG] Connection id "0HNGBNVUCVJCK" completed keep alive response.
+2025-10-15 13:23:55.004 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 96.4888ms
+2025-10-15 13:24:01.236 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5124/api/Log - -
+2025-10-15 13:24:01.240 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Log'
+2025-10-15 13:24:01.244 +05:30 [DBG] Endpoint 'Logging.Controllers.LogController.Get (Logging)' with route pattern 'api/Log' is valid for the request path '/api/Log'
+2025-10-15 13:24:01.244 +05:30 [DBG] Request matched endpoint 'Logging.Controllers.LogController.Get (Logging)'
+2025-10-15 13:24:01.246 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-15 13:24:01.249 +05:30 [INF] Executing endpoint 'Logging.Controllers.LogController.Get (Logging)'
+2025-10-15 13:24:01.268 +05:30 [INF] Route matched with {action = "Get", controller = "Log"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller Logging.Controllers.LogController (Logging).
+2025-10-15 13:24:01.269 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-15 13:24:01.269 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-15 13:24:01.270 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-15 13:24:01.270 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-15 13:24:01.270 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-15 13:24:01.271 +05:30 [DBG] Executing controller factory for controller Logging.Controllers.LogController (Logging)
+2025-10-15 13:24:01.271 +05:30 [DBG] Executed controller factory for controller Logging.Controllers.LogController (Logging)
+2025-10-15 13:24:04.808 +05:30 [INF] LogController Get method endpoint accesses
+2025-10-15 13:24:08.669 +05:30 [WRN] This is warning message
+2025-10-15 13:24:15.340 +05:30 [ERR] An error occured: Sample exception
+2025-10-15 13:24:22.823 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-15 13:24:22.825 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-10-15 13:24:22.825 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-15 13:24:22.825 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-15 13:24:22.826 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-10-15 13:24:22.826 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-10-15 13:24:22.837 +05:30 [INF] Executed action Logging.Controllers.LogController.Get (Logging) in 21557.0025ms
+2025-10-15 13:24:22.838 +05:30 [INF] Executed endpoint 'Logging.Controllers.LogController.Get (Logging)'
+2025-10-15 13:24:22.838 +05:30 [DBG] Connection id "0HNGBNVUCVJCK" completed keep alive response.
+2025-10-15 13:24:22.838 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5124/api/Log - - - 500 - text/plain;+charset=utf-8 21601.8350ms

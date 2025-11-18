@@ -1,0 +1,465 @@
+2025-10-17 11:12:19.694 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-17 11:12:19.850 +05:30 [DBG] Hosting starting
+2025-10-17 11:12:19.946 +05:30 [INF] User profile is available. Using 'C:\Users\Kiran.B\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-17 11:12:19.954 +05:30 [DBG] Reading data from file 'C:\Users\Kiran.B\AppData\Local\ASP.NET\DataProtection-Keys\key-5484f942-d979-4fc3-823e-f991528de69d.xml'.
+2025-10-17 11:12:19.969 +05:30 [DBG] Found key {5484f942-d979-4fc3-823e-f991528de69d}.
+2025-10-17 11:12:20.009 +05:30 [DBG] Considering key {5484f942-d979-4fc3-823e-f991528de69d} with expiration date 2025-11-19 07:00:22Z as default key.
+2025-10-17 11:12:20.017 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-17 11:12:20.024 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2025-10-17 11:12:20.026 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-17 11:12:20.035 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-17 11:12:20.039 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-17 11:12:20.044 +05:30 [DBG] Using key {5484f942-d979-4fc3-823e-f991528de69d} as the default key.
+2025-10-17 11:12:20.047 +05:30 [DBG] Key ring with default key {5484f942-d979-4fc3-823e-f991528de69d} was loaded during application startup.
+2025-10-17 11:12:20.278 +05:30 [INF] Now listening on: http://localhost:5159
+2025-10-17 11:12:20.280 +05:30 [DBG] Loaded hosting startup assembly NoticeBoardAPI
+2025-10-17 11:12:20.283 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-17 11:12:20.285 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-17 11:12:20.289 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-17 11:12:20.290 +05:30 [INF] Hosting environment: Development
+2025-10-17 11:12:20.291 +05:30 [INF] Content root path: C:\Users\Kiran.B\Desktop\Training 2025\DotNET Core\NoticeBoardAPI
+2025-10-17 11:12:20.292 +05:30 [DBG] Hosting started
+2025-10-17 11:12:20.753 +05:30 [DBG] Connection id "0HNGD7VOD281C" accepted.
+2025-10-17 11:12:20.757 +05:30 [DBG] Connection id "0HNGD7VOD281C" started.
+2025-10-17 11:12:20.774 +05:30 [DBG] Connection id "0HNGD7VOD281D" received FIN.
+2025-10-17 11:12:20.774 +05:30 [DBG] Connection id "0HNGD7VOD281C" received FIN.
+2025-10-17 11:12:20.780 +05:30 [DBG] Connection id "0HNGD7VOD281D" accepted.
+2025-10-17 11:12:20.783 +05:30 [DBG] Connection id "0HNGD7VOD281D" started.
+2025-10-17 11:12:20.782 +05:30 [DBG] Connection id "0HNGD7VOD281C" sending FIN because: "The client closed the connection."
+2025-10-17 11:12:20.787 +05:30 [DBG] Connection id "0HNGD7VOD281D" sending FIN because: "The client closed the connection."
+2025-10-17 11:12:20.792 +05:30 [DBG] Connection id "0HNGD7VOD281C" disconnecting.
+2025-10-17 11:12:20.794 +05:30 [DBG] Connection id "0HNGD7VOD281D" disconnecting.
+2025-10-17 11:12:20.806 +05:30 [DBG] Connection id "0HNGD7VOD281D" stopped.
+2025-10-17 11:12:20.806 +05:30 [DBG] Connection id "0HNGD7VOD281C" stopped.
+2025-10-17 11:12:20.994 +05:30 [DBG] Connection id "0HNGD7VOD281E" accepted.
+2025-10-17 11:12:21.000 +05:30 [DBG] Connection id "0HNGD7VOD281E" started.
+2025-10-17 11:12:21.001 +05:30 [DBG] Connection id "0HNGD7VOD281F" accepted.
+2025-10-17 11:12:21.009 +05:30 [DBG] Connection id "0HNGD7VOD281F" started.
+2025-10-17 11:12:21.064 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - -
+2025-10-17 11:12:21.091 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-17 11:12:21.125 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-17 11:12:21.128 +05:30 [DBG] Request did not match any endpoints
+2025-10-17 11:12:21.277 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-17 11:12:21.400 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/_framework/aspnetcore-browser-refresh.js - -
+2025-10-17 11:12:21.401 +05:30 [DBG] Connection id "0HNGD7VOD281G" accepted.
+2025-10-17 11:12:21.411 +05:30 [DBG] Connection id "0HNGD7VOD281F" completed keep alive response.
+2025-10-17 11:12:21.402 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-17 11:12:21.412 +05:30 [DBG] Connection id "0HNGD7VOD281G" started.
+2025-10-17 11:12:21.416 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 14.3636ms
+2025-10-17 11:12:21.417 +05:30 [DBG] Connection id "0HNGD7VOD281E" completed keep alive response.
+2025-10-17 11:12:21.419 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/_vs/browserLink - -
+2025-10-17 11:12:21.424 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - - - 200 - text/html;charset=utf-8 363.6109ms
+2025-10-17 11:12:21.458 +05:30 [DBG] Connection id "0HNGD7VOD281G" completed keep alive response.
+2025-10-17 11:12:21.462 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.5845ms
+2025-10-17 11:12:21.528 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - -
+2025-10-17 11:12:21.530 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-17 11:12:21.532 +05:30 [DBG] Request did not match any endpoints
+2025-10-17 11:12:21.694 +05:30 [DBG] Connection id "0HNGD7VOD281G" completed keep alive response.
+2025-10-17 11:12:21.698 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.5819ms
+2025-10-17 11:12:44.585 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5159/api/CLAuth/login application/json 49
+2025-10-17 11:12:44.599 +05:30 [DBG] 1 candidate(s) found for the request path '/api/CLAuth/login'
+2025-10-17 11:12:44.605 +05:30 [DBG] Endpoint 'NoticeBoardAPI.API.CLAuthController.Login (NoticeBoardAPI)' with route pattern 'api/CLAuth/login' is valid for the request path '/api/CLAuth/login'
+2025-10-17 11:12:44.620 +05:30 [DBG] Request matched endpoint 'NoticeBoardAPI.API.CLAuthController.Login (NoticeBoardAPI)'
+2025-10-17 11:12:44.624 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-17 11:12:44.704 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-10-17 11:12:44.709 +05:30 [INF] Executing endpoint 'NoticeBoardAPI.API.CLAuthController.Login (NoticeBoardAPI)'
+2025-10-17 11:12:44.744 +05:30 [INF] Route matched with {action = "Login", controller = "CLAuth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(NoticeBoardAPI.MAL.DTO.DTOLogin) on controller NoticeBoardAPI.API.CLAuthController (NoticeBoardAPI).
+2025-10-17 11:12:44.748 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-17 11:12:44.751 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-17 11:12:44.754 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-17 11:12:44.758 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-17 11:12:44.761 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-17 11:12:44.765 +05:30 [DBG] Executing controller factory for controller NoticeBoardAPI.API.CLAuthController (NoticeBoardAPI)
+2025-10-17 11:12:44.768 +05:30 [DBG] Executed controller factory for controller NoticeBoardAPI.API.CLAuthController (NoticeBoardAPI)
+2025-10-17 11:12:44.775 +05:30 [DBG] Attempting to bind parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin' ...
+2025-10-17 11:12:44.779 +05:30 [DBG] Attempting to bind parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin' using the name '' in request data ...
+2025-10-17 11:12:44.783 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-10-17 11:12:44.796 +05:30 [DBG] Connection id "0HNGD7VOD281G", Request id "0HNGD7VOD281G:00000003": started reading request body.
+2025-10-17 11:12:44.798 +05:30 [DBG] Connection id "0HNGD7VOD281G", Request id "0HNGD7VOD281G:00000003": done reading request body.
+2025-10-17 11:12:44.813 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'NoticeBoardAPI.MAL.DTO.DTOLogin'
+2025-10-17 11:12:44.816 +05:30 [DBG] Done attempting to bind parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin'.
+2025-10-17 11:12:44.820 +05:30 [DBG] Done attempting to bind parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin'.
+2025-10-17 11:12:44.823 +05:30 [DBG] Attempting to validate the bound parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin' ...
+2025-10-17 11:12:44.836 +05:30 [DBG] Done attempting to validate the bound parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin'.
+2025-10-17 11:12:44.962 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-17 11:12:44.970 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-10-17 11:12:44.972 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-17 11:12:44.975 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-17 11:12:44.977 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-10-17 11:12:44.980 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-10-17 11:12:44.994 +05:30 [INF] Executed action NoticeBoardAPI.API.CLAuthController.Login (NoticeBoardAPI) in 227.326ms
+2025-10-17 11:12:44.997 +05:30 [INF] Executed endpoint 'NoticeBoardAPI.API.CLAuthController.Login (NoticeBoardAPI)'
+2025-10-17 11:12:44.999 +05:30 [DBG] Connection id "0HNGD7VOD281G" completed keep alive response.
+2025-10-17 11:12:45.001 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5159/api/CLAuth/login application/json 49 - 200 - text/plain;+charset=utf-8 416.1247ms
+2025-10-17 11:13:04.080 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/api/CLNTC01/get_all_notice - -
+2025-10-17 11:13:04.094 +05:30 [DBG] 1 candidate(s) found for the request path '/api/CLNTC01/get_all_notice'
+2025-10-17 11:13:04.096 +05:30 [DBG] Endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)' with route pattern 'api/CLNTC01/get_all_notice' is valid for the request path '/api/CLNTC01/get_all_notice'
+2025-10-17 11:13:04.101 +05:30 [DBG] Request matched endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)'
+2025-10-17 11:13:04.103 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-17 11:13:04.164 +05:30 [DBG] Successfully validated the token.
+2025-10-17 11:13:04.167 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-10-17 11:13:04.176 +05:30 [DBG] Authorization was successful.
+2025-10-17 11:13:04.178 +05:30 [INF] Executing endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)'
+2025-10-17 11:13:04.183 +05:30 [INF] Route matched with {action = "GetNotice", controller = "CLNTC01"}. Executing controller action with signature NoticeBoardAPI.MAL.Response GetNotice() on controller NoticeBoardAPI.API.CLNTC01Controller (NoticeBoardAPI).
+2025-10-17 11:13:04.187 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-17 11:13:04.190 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-17 11:13:04.195 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-17 11:13:04.198 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-17 11:13:04.201 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-17 11:13:04.204 +05:30 [DBG] Executing controller factory for controller NoticeBoardAPI.API.CLNTC01Controller (NoticeBoardAPI)
+2025-10-17 11:13:04.207 +05:30 [DBG] Executed controller factory for controller NoticeBoardAPI.API.CLNTC01Controller (NoticeBoardAPI)
+2025-10-17 11:13:04.727 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-17 11:13:04.744 +05:30 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-10-17 11:13:04.748 +05:30 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-10-17 11:13:04.750 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-17 11:13:04.753 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-17 11:13:04.755 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-10-17 11:13:04.758 +05:30 [INF] Executing ObjectResult, writing value of type 'NoticeBoardAPI.MAL.Response'.
+2025-10-17 11:13:04.786 +05:30 [INF] Executed action NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI) in 582.6827ms
+2025-10-17 11:13:04.789 +05:30 [INF] Executed endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)'
+2025-10-17 11:13:04.791 +05:30 [DBG] Connection id "0HNGD7VOD281G" completed keep alive response.
+2025-10-17 11:13:04.793 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/api/CLNTC01/get_all_notice - - - 200 - application/json;+charset=utf-8 713.4108ms
+2025-10-17 11:13:16.488 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5159/api/CLNTC01/delete_notice?id=4 - -
+2025-10-17 11:13:16.492 +05:30 [DBG] 1 candidate(s) found for the request path '/api/CLNTC01/delete_notice'
+2025-10-17 11:13:16.495 +05:30 [DBG] Endpoint 'NoticeBoardAPI.API.CLNTC01Controller.DeleteNotice (NoticeBoardAPI)' with route pattern 'api/CLNTC01/delete_notice' is valid for the request path '/api/CLNTC01/delete_notice'
+2025-10-17 11:13:16.503 +05:30 [DBG] Request matched endpoint 'NoticeBoardAPI.API.CLNTC01Controller.DeleteNotice (NoticeBoardAPI)'
+2025-10-17 11:13:16.506 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-17 11:13:16.510 +05:30 [DBG] Successfully validated the token.
+2025-10-17 11:13:16.513 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-10-17 11:13:16.517 +05:30 [DBG] Authorization was successful.
+2025-10-17 11:13:16.519 +05:30 [INF] Executing endpoint 'NoticeBoardAPI.API.CLNTC01Controller.DeleteNotice (NoticeBoardAPI)'
+2025-10-17 11:13:16.530 +05:30 [INF] Route matched with {action = "DeleteNotice", controller = "CLNTC01"}. Executing controller action with signature NoticeBoardAPI.MAL.Response DeleteNotice(Int32) on controller NoticeBoardAPI.API.CLNTC01Controller (NoticeBoardAPI).
+2025-10-17 11:13:16.535 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-17 11:13:16.538 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-17 11:13:16.542 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-17 11:13:16.547 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-17 11:13:16.549 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-17 11:13:16.556 +05:30 [DBG] Executing controller factory for controller NoticeBoardAPI.API.CLNTC01Controller (NoticeBoardAPI)
+2025-10-17 11:13:16.559 +05:30 [DBG] Executed controller factory for controller NoticeBoardAPI.API.CLNTC01Controller (NoticeBoardAPI)
+2025-10-17 11:13:16.566 +05:30 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-10-17 11:13:16.570 +05:30 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-10-17 11:13:16.575 +05:30 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-10-17 11:13:16.578 +05:30 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-10-17 11:13:16.583 +05:30 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-10-17 11:13:16.587 +05:30 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-10-17 11:13:16.633 +05:30 [INF] --- Notice is deleted from notice board ---
+2025-10-17 11:13:16.635 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-17 11:13:16.640 +05:30 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-10-17 11:13:16.644 +05:30 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-10-17 11:13:16.648 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-17 11:13:16.651 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-17 11:13:16.653 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-10-17 11:13:16.657 +05:30 [INF] Executing ObjectResult, writing value of type 'NoticeBoardAPI.MAL.Response'.
+2025-10-17 11:13:16.661 +05:30 [INF] Executed action NoticeBoardAPI.API.CLNTC01Controller.DeleteNotice (NoticeBoardAPI) in 104.4138ms
+2025-10-17 11:13:16.665 +05:30 [INF] Executed endpoint 'NoticeBoardAPI.API.CLNTC01Controller.DeleteNotice (NoticeBoardAPI)'
+2025-10-17 11:13:16.667 +05:30 [DBG] Connection id "0HNGD7VOD281G" completed keep alive response.
+2025-10-17 11:13:16.670 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5159/api/CLNTC01/delete_notice?id=4 - - - 200 - application/json;+charset=utf-8 181.4940ms
+2025-10-17 12:40:54.687 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-17 12:40:54.807 +05:30 [DBG] Hosting starting
+2025-10-17 12:40:54.857 +05:30 [INF] User profile is available. Using 'C:\Users\Kiran.B\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-17 12:40:54.864 +05:30 [DBG] Reading data from file 'C:\Users\Kiran.B\AppData\Local\ASP.NET\DataProtection-Keys\key-5484f942-d979-4fc3-823e-f991528de69d.xml'.
+2025-10-17 12:40:54.876 +05:30 [DBG] Found key {5484f942-d979-4fc3-823e-f991528de69d}.
+2025-10-17 12:40:54.887 +05:30 [DBG] Considering key {5484f942-d979-4fc3-823e-f991528de69d} with expiration date 2025-11-19 07:00:22Z as default key.
+2025-10-17 12:40:54.892 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-17 12:40:54.897 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2025-10-17 12:40:54.900 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-17 12:40:54.906 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-17 12:40:54.909 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-17 12:40:54.912 +05:30 [DBG] Using key {5484f942-d979-4fc3-823e-f991528de69d} as the default key.
+2025-10-17 12:40:54.915 +05:30 [DBG] Key ring with default key {5484f942-d979-4fc3-823e-f991528de69d} was loaded during application startup.
+2025-10-17 12:40:55.064 +05:30 [INF] Now listening on: http://localhost:5159
+2025-10-17 12:40:55.066 +05:30 [DBG] Loaded hosting startup assembly NoticeBoardAPI
+2025-10-17 12:40:55.070 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-17 12:40:55.080 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-17 12:40:55.083 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-17 12:40:55.084 +05:30 [INF] Hosting environment: Development
+2025-10-17 12:40:55.086 +05:30 [INF] Content root path: C:\Users\Kiran.B\Desktop\Training 2025\DotNET Core\NoticeBoardAPI
+2025-10-17 12:40:55.088 +05:30 [DBG] Hosting started
+2025-10-17 12:40:55.429 +05:30 [DBG] Connection id "0HNGD9H89OKSE" received FIN.
+2025-10-17 12:40:55.442 +05:30 [DBG] Connection id "0HNGD9H89OKSE" accepted.
+2025-10-17 12:40:55.453 +05:30 [DBG] Connection id "0HNGD9H89OKSE" started.
+2025-10-17 12:40:55.464 +05:30 [DBG] Connection id "0HNGD9H89OKSE" sending FIN because: "The client closed the connection."
+2025-10-17 12:40:55.470 +05:30 [DBG] Connection id "0HNGD9H89OKSE" disconnecting.
+2025-10-17 12:40:55.478 +05:30 [DBG] Connection id "0HNGD9H89OKSE" stopped.
+2025-10-17 12:40:55.632 +05:30 [DBG] Connection id "0HNGD9H89OKSF" accepted.
+2025-10-17 12:40:55.635 +05:30 [DBG] Connection id "0HNGD9H89OKSF" started.
+2025-10-17 12:40:55.638 +05:30 [DBG] Connection id "0HNGD9H89OKSG" accepted.
+2025-10-17 12:40:55.656 +05:30 [DBG] Connection id "0HNGD9H89OKSG" started.
+2025-10-17 12:40:55.734 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - -
+2025-10-17 12:40:55.762 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-17 12:40:55.787 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-17 12:40:55.789 +05:30 [DBG] Request did not match any endpoints
+2025-10-17 12:40:55.934 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-17 12:40:56.053 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-17 12:40:56.055 +05:30 [DBG] Connection id "0HNGD9H89OKSH" accepted.
+2025-10-17 12:40:56.055 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/_framework/aspnetcore-browser-refresh.js - -
+2025-10-17 12:40:56.085 +05:30 [DBG] Connection id "0HNGD9H89OKSF" completed keep alive response.
+2025-10-17 12:40:56.087 +05:30 [DBG] Connection id "0HNGD9H89OKSH" started.
+2025-10-17 12:40:56.092 +05:30 [DBG] Connection id "0HNGD9H89OKSG" completed keep alive response.
+2025-10-17 12:40:56.096 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - - - 200 - text/html;charset=utf-8 364.2862ms
+2025-10-17 12:40:56.096 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/_vs/browserLink - -
+2025-10-17 12:40:56.098 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 43.5467ms
+2025-10-17 12:40:56.135 +05:30 [DBG] Connection id "0HNGD9H89OKSH" completed keep alive response.
+2025-10-17 12:40:56.137 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.7289ms
+2025-10-17 12:40:56.190 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - -
+2025-10-17 12:40:56.193 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-17 12:40:56.195 +05:30 [DBG] Request did not match any endpoints
+2025-10-17 12:40:56.355 +05:30 [DBG] Connection id "0HNGD9H89OKSH" completed keep alive response.
+2025-10-17 12:40:56.358 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.7363ms
+2025-10-17 12:41:08.859 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/api/CLNTC01/get_all_notice - -
+2025-10-17 12:41:08.876 +05:30 [DBG] 1 candidate(s) found for the request path '/api/CLNTC01/get_all_notice'
+2025-10-17 12:41:08.882 +05:30 [DBG] Endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)' with route pattern 'api/CLNTC01/get_all_notice' is valid for the request path '/api/CLNTC01/get_all_notice'
+2025-10-17 12:41:08.887 +05:30 [DBG] Request matched endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)'
+2025-10-17 12:41:08.890 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-17 12:41:08.987 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-10-17 12:41:08.996 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|User)
+2025-10-17 12:41:09.002 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-17 12:41:09.004 +05:30 [DBG] Connection id "0HNGD9H89OKSH" completed keep alive response.
+2025-10-17 12:41:09.007 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/api/CLNTC01/get_all_notice - - - 401 0 - 147.5611ms
+2025-10-17 13:14:23.160 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-17 13:14:23.273 +05:30 [DBG] Hosting starting
+2025-10-17 13:14:23.317 +05:30 [INF] User profile is available. Using 'C:\Users\Kiran.B\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-17 13:14:23.324 +05:30 [DBG] Reading data from file 'C:\Users\Kiran.B\AppData\Local\ASP.NET\DataProtection-Keys\key-5484f942-d979-4fc3-823e-f991528de69d.xml'.
+2025-10-17 13:14:23.335 +05:30 [DBG] Found key {5484f942-d979-4fc3-823e-f991528de69d}.
+2025-10-17 13:14:23.347 +05:30 [DBG] Considering key {5484f942-d979-4fc3-823e-f991528de69d} with expiration date 2025-11-19 07:00:22Z as default key.
+2025-10-17 13:14:23.354 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-17 13:14:23.367 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2025-10-17 13:14:23.370 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-17 13:14:23.377 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-17 13:14:23.380 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-17 13:14:23.384 +05:30 [DBG] Using key {5484f942-d979-4fc3-823e-f991528de69d} as the default key.
+2025-10-17 13:14:23.386 +05:30 [DBG] Key ring with default key {5484f942-d979-4fc3-823e-f991528de69d} was loaded during application startup.
+2025-10-17 13:14:23.541 +05:30 [INF] Now listening on: http://localhost:5159
+2025-10-17 13:14:23.543 +05:30 [DBG] Loaded hosting startup assembly NoticeBoardAPI
+2025-10-17 13:14:23.545 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-17 13:14:23.547 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-17 13:14:23.549 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-17 13:14:23.551 +05:30 [INF] Hosting environment: Development
+2025-10-17 13:14:23.552 +05:30 [INF] Content root path: C:\Users\Kiran.B\Desktop\Training 2025\DotNET Core\NoticeBoardAPI
+2025-10-17 13:14:23.554 +05:30 [DBG] Hosting started
+2025-10-17 13:14:23.759 +05:30 [DBG] Connection id "0HNGDA3UQMESM" received FIN.
+2025-10-17 13:14:23.769 +05:30 [DBG] Connection id "0HNGDA3UQMESM" accepted.
+2025-10-17 13:14:23.774 +05:30 [DBG] Connection id "0HNGDA3UQMESM" started.
+2025-10-17 13:14:23.790 +05:30 [DBG] Connection id "0HNGDA3UQMESM" sending FIN because: "The client closed the connection."
+2025-10-17 13:14:23.796 +05:30 [DBG] Connection id "0HNGDA3UQMESM" disconnecting.
+2025-10-17 13:14:23.803 +05:30 [DBG] Connection id "0HNGDA3UQMESM" stopped.
+2025-10-17 13:14:23.937 +05:30 [DBG] Connection id "0HNGDA3UQMESN" accepted.
+2025-10-17 13:14:23.940 +05:30 [DBG] Connection id "0HNGDA3UQMESN" started.
+2025-10-17 13:14:23.941 +05:30 [DBG] Connection id "0HNGDA3UQMESO" accepted.
+2025-10-17 13:14:23.953 +05:30 [DBG] Connection id "0HNGDA3UQMESO" started.
+2025-10-17 13:14:24.011 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - -
+2025-10-17 13:14:24.041 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-17 13:14:24.068 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-17 13:14:24.073 +05:30 [DBG] Request did not match any endpoints
+2025-10-17 13:14:24.218 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-17 13:14:24.343 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-17 13:14:24.347 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/_framework/aspnetcore-browser-refresh.js - -
+2025-10-17 13:14:24.344 +05:30 [DBG] Connection id "0HNGDA3UQMESP" accepted.
+2025-10-17 13:14:24.364 +05:30 [DBG] Connection id "0HNGDA3UQMESN" completed keep alive response.
+2025-10-17 13:14:24.369 +05:30 [DBG] Connection id "0HNGDA3UQMESP" started.
+2025-10-17 13:14:24.373 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - - - 200 - text/html;charset=utf-8 364.9660ms
+2025-10-17 13:14:24.369 +05:30 [DBG] Connection id "0HNGDA3UQMESO" completed keep alive response.
+2025-10-17 13:14:24.373 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/_vs/browserLink - -
+2025-10-17 13:14:24.377 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 30.1095ms
+2025-10-17 13:14:24.408 +05:30 [DBG] Connection id "0HNGDA3UQMESP" completed keep alive response.
+2025-10-17 13:14:24.411 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.6218ms
+2025-10-17 13:14:24.464 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - -
+2025-10-17 13:14:24.466 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-17 13:14:24.468 +05:30 [DBG] Request did not match any endpoints
+2025-10-17 13:14:24.602 +05:30 [DBG] Connection id "0HNGDA3UQMESP" completed keep alive response.
+2025-10-17 13:14:24.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 149.6364ms
+2025-10-17 13:14:35.676 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/api/CLNTC01/get_all_notice - -
+2025-10-17 13:14:35.685 +05:30 [DBG] 1 candidate(s) found for the request path '/api/CLNTC01/get_all_notice'
+2025-10-17 13:14:35.692 +05:30 [DBG] Endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)' with route pattern 'api/CLNTC01/get_all_notice' is valid for the request path '/api/CLNTC01/get_all_notice'
+2025-10-17 13:14:35.697 +05:30 [DBG] Request matched endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)'
+2025-10-17 13:14:35.701 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-17 13:14:35.823 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-10-17 13:14:35.833 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|User)
+2025-10-17 13:14:35.842 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-17 13:14:35.844 +05:30 [DBG] Connection id "0HNGDA3UQMESP" completed keep alive response.
+2025-10-17 13:14:35.847 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/api/CLNTC01/get_all_notice - - - 401 0 - 171.4991ms
+2025-10-17 13:14:49.638 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5159/api/CLAuth/login application/json 49
+2025-10-17 13:14:49.642 +05:30 [DBG] 1 candidate(s) found for the request path '/api/CLAuth/login'
+2025-10-17 13:14:49.645 +05:30 [DBG] Endpoint 'NoticeBoardAPI.API.CLAuthController.Login (NoticeBoardAPI)' with route pattern 'api/CLAuth/login' is valid for the request path '/api/CLAuth/login'
+2025-10-17 13:14:49.649 +05:30 [DBG] Request matched endpoint 'NoticeBoardAPI.API.CLAuthController.Login (NoticeBoardAPI)'
+2025-10-17 13:14:49.651 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-17 13:14:49.656 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-10-17 13:14:49.659 +05:30 [INF] Executing endpoint 'NoticeBoardAPI.API.CLAuthController.Login (NoticeBoardAPI)'
+2025-10-17 13:14:49.689 +05:30 [INF] Route matched with {action = "Login", controller = "CLAuth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(NoticeBoardAPI.MAL.DTO.DTOLogin) on controller NoticeBoardAPI.API.CLAuthController (NoticeBoardAPI).
+2025-10-17 13:14:49.694 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-17 13:14:49.697 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-17 13:14:49.700 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-17 13:14:49.704 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-17 13:14:49.707 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-17 13:14:49.712 +05:30 [DBG] Executing controller factory for controller NoticeBoardAPI.API.CLAuthController (NoticeBoardAPI)
+2025-10-17 13:14:49.715 +05:30 [DBG] Executed controller factory for controller NoticeBoardAPI.API.CLAuthController (NoticeBoardAPI)
+2025-10-17 13:14:49.722 +05:30 [DBG] Attempting to bind parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin' ...
+2025-10-17 13:14:49.726 +05:30 [DBG] Attempting to bind parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin' using the name '' in request data ...
+2025-10-17 13:14:49.737 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-10-17 13:14:49.748 +05:30 [DBG] Connection id "0HNGDA3UQMESP", Request id "0HNGDA3UQMESP:00000004": started reading request body.
+2025-10-17 13:14:49.750 +05:30 [DBG] Connection id "0HNGDA3UQMESP", Request id "0HNGDA3UQMESP:00000004": done reading request body.
+2025-10-17 13:14:49.767 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'NoticeBoardAPI.MAL.DTO.DTOLogin'
+2025-10-17 13:14:49.770 +05:30 [DBG] Done attempting to bind parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin'.
+2025-10-17 13:14:49.773 +05:30 [DBG] Done attempting to bind parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin'.
+2025-10-17 13:14:49.777 +05:30 [DBG] Attempting to validate the bound parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin' ...
+2025-10-17 13:14:49.786 +05:30 [DBG] Done attempting to validate the bound parameter 'modal' of type 'NoticeBoardAPI.MAL.DTO.DTOLogin'.
+2025-10-17 13:14:49.918 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-17 13:14:49.926 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-10-17 13:14:49.928 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-17 13:14:49.930 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-17 13:14:49.933 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-10-17 13:14:49.936 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-10-17 13:14:49.942 +05:30 [INF] Executed action NoticeBoardAPI.API.CLAuthController.Login (NoticeBoardAPI) in 228.6461ms
+2025-10-17 13:14:49.945 +05:30 [INF] Executed endpoint 'NoticeBoardAPI.API.CLAuthController.Login (NoticeBoardAPI)'
+2025-10-17 13:14:49.947 +05:30 [DBG] Connection id "0HNGDA3UQMESP" completed keep alive response.
+2025-10-17 13:14:49.949 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5159/api/CLAuth/login application/json 49 - 200 - text/plain;+charset=utf-8 311.1681ms
+2025-10-17 13:15:02.329 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/api/CLNTC01/get_all_notice - -
+2025-10-17 13:15:02.332 +05:30 [DBG] 1 candidate(s) found for the request path '/api/CLNTC01/get_all_notice'
+2025-10-17 13:15:02.335 +05:30 [DBG] Endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)' with route pattern 'api/CLNTC01/get_all_notice' is valid for the request path '/api/CLNTC01/get_all_notice'
+2025-10-17 13:15:02.339 +05:30 [DBG] Request matched endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)'
+2025-10-17 13:15:02.341 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-17 13:15:02.386 +05:30 [DBG] Successfully validated the token.
+2025-10-17 13:15:02.390 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-10-17 13:15:02.396 +05:30 [DBG] Authorization was successful.
+2025-10-17 13:15:02.399 +05:30 [INF] Executing endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)'
+2025-10-17 13:15:02.405 +05:30 [INF] Route matched with {action = "GetNotice", controller = "CLNTC01"}. Executing controller action with signature NoticeBoardAPI.MAL.Response GetNotice() on controller NoticeBoardAPI.API.CLNTC01Controller (NoticeBoardAPI).
+2025-10-17 13:15:02.408 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-17 13:15:02.410 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-17 13:15:02.413 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-17 13:15:02.417 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-17 13:15:02.420 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-17 13:15:02.423 +05:30 [DBG] Executing controller factory for controller NoticeBoardAPI.API.CLNTC01Controller (NoticeBoardAPI)
+2025-10-17 13:15:02.427 +05:30 [DBG] Executed controller factory for controller NoticeBoardAPI.API.CLNTC01Controller (NoticeBoardAPI)
+2025-10-17 13:15:03.103 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-17 13:15:03.118 +05:30 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-10-17 13:15:03.122 +05:30 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-10-17 13:15:03.124 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-17 13:15:03.127 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-17 13:15:03.129 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-10-17 13:15:03.131 +05:30 [INF] Executing ObjectResult, writing value of type 'NoticeBoardAPI.MAL.Response'.
+2025-10-17 13:15:03.160 +05:30 [INF] Executed action NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI) in 737.3467ms
+2025-10-17 13:15:03.163 +05:30 [INF] Executed endpoint 'NoticeBoardAPI.API.CLNTC01Controller.GetNotice (NoticeBoardAPI)'
+2025-10-17 13:15:03.165 +05:30 [DBG] Connection id "0HNGDA3UQMESP" completed keep alive response.
+2025-10-17 13:15:03.168 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/api/CLNTC01/get_all_notice - - - 200 - application/json;+charset=utf-8 839.0550ms
+2025-10-17 13:18:46.458 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-17 13:18:46.578 +05:30 [DBG] Hosting starting
+2025-10-17 13:18:46.633 +05:30 [INF] User profile is available. Using 'C:\Users\Kiran.B\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-17 13:18:46.640 +05:30 [DBG] Reading data from file 'C:\Users\Kiran.B\AppData\Local\ASP.NET\DataProtection-Keys\key-5484f942-d979-4fc3-823e-f991528de69d.xml'.
+2025-10-17 13:18:46.650 +05:30 [DBG] Found key {5484f942-d979-4fc3-823e-f991528de69d}.
+2025-10-17 13:18:46.662 +05:30 [DBG] Considering key {5484f942-d979-4fc3-823e-f991528de69d} with expiration date 2025-11-19 07:00:22Z as default key.
+2025-10-17 13:18:46.667 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-17 13:18:46.674 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2025-10-17 13:18:46.677 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-17 13:18:46.684 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-17 13:18:46.688 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-17 13:18:46.692 +05:30 [DBG] Using key {5484f942-d979-4fc3-823e-f991528de69d} as the default key.
+2025-10-17 13:18:46.695 +05:30 [DBG] Key ring with default key {5484f942-d979-4fc3-823e-f991528de69d} was loaded during application startup.
+2025-10-17 13:18:46.845 +05:30 [INF] Now listening on: http://localhost:5159
+2025-10-17 13:18:46.847 +05:30 [DBG] Loaded hosting startup assembly NoticeBoardAPI
+2025-10-17 13:18:46.849 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-17 13:18:46.851 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-17 13:18:46.855 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-17 13:18:46.856 +05:30 [INF] Hosting environment: Development
+2025-10-17 13:18:46.858 +05:30 [INF] Content root path: C:\Users\Kiran.B\Desktop\Training 2025\DotNET Core\NoticeBoardAPI
+2025-10-17 13:18:46.867 +05:30 [DBG] Hosting started
+2025-10-17 13:18:46.968 +05:30 [DBG] Connection id "0HNGDA6D8PTTL" accepted.
+2025-10-17 13:18:46.968 +05:30 [DBG] Connection id "0HNGDA6D8PTTK" accepted.
+2025-10-17 13:18:46.978 +05:30 [DBG] Connection id "0HNGDA6D8PTTL" received FIN.
+2025-10-17 13:18:46.978 +05:30 [DBG] Connection id "0HNGDA6D8PTTK" received FIN.
+2025-10-17 13:18:46.979 +05:30 [DBG] Connection id "0HNGDA6D8PTTL" started.
+2025-10-17 13:18:46.981 +05:30 [DBG] Connection id "0HNGDA6D8PTTK" started.
+2025-10-17 13:18:47.004 +05:30 [DBG] Connection id "0HNGDA6D8PTTK" sending FIN because: "The client closed the connection."
+2025-10-17 13:18:47.004 +05:30 [DBG] Connection id "0HNGDA6D8PTTL" sending FIN because: "The client closed the connection."
+2025-10-17 13:18:47.010 +05:30 [DBG] Connection id "0HNGDA6D8PTTK" disconnecting.
+2025-10-17 13:18:47.012 +05:30 [DBG] Connection id "0HNGDA6D8PTTL" disconnecting.
+2025-10-17 13:18:47.020 +05:30 [DBG] Connection id "0HNGDA6D8PTTK" stopped.
+2025-10-17 13:18:47.020 +05:30 [DBG] Connection id "0HNGDA6D8PTTL" stopped.
+2025-10-17 13:18:47.176 +05:30 [DBG] Connection id "0HNGDA6D8PTTM" accepted.
+2025-10-17 13:18:47.178 +05:30 [DBG] Connection id "0HNGDA6D8PTTM" started.
+2025-10-17 13:18:47.180 +05:30 [DBG] Connection id "0HNGDA6D8PTTN" accepted.
+2025-10-17 13:18:47.186 +05:30 [DBG] Connection id "0HNGDA6D8PTTN" started.
+2025-10-17 13:18:47.233 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - -
+2025-10-17 13:18:47.269 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-17 13:18:47.299 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-17 13:18:47.302 +05:30 [DBG] Request did not match any endpoints
+2025-10-17 13:18:47.444 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-17 13:18:47.563 +05:30 [DBG] Connection id "0HNGDA6D8PTTO" accepted.
+2025-10-17 13:18:47.565 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/_framework/aspnetcore-browser-refresh.js - -
+2025-10-17 13:18:47.565 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-17 13:18:47.566 +05:30 [DBG] Connection id "0HNGDA6D8PTTO" started.
+2025-10-17 13:18:47.570 +05:30 [DBG] Connection id "0HNGDA6D8PTTM" completed keep alive response.
+2025-10-17 13:18:47.571 +05:30 [DBG] Connection id "0HNGDA6D8PTTN" completed keep alive response.
+2025-10-17 13:18:47.572 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/_vs/browserLink - -
+2025-10-17 13:18:47.578 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - - - 200 - text/html;charset=utf-8 346.9734ms
+2025-10-17 13:18:47.579 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 14.1523ms
+2025-10-17 13:18:47.628 +05:30 [DBG] Connection id "0HNGDA6D8PTTO" completed keep alive response.
+2025-10-17 13:18:47.631 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.6555ms
+2025-10-17 13:18:47.677 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - -
+2025-10-17 13:18:47.680 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-17 13:18:47.682 +05:30 [DBG] Request did not match any endpoints
+2025-10-17 13:18:47.823 +05:30 [DBG] Connection id "0HNGDA6D8PTTO" completed keep alive response.
+2025-10-17 13:18:47.827 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 149.5767ms
+2025-10-17 15:17:55.445 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-17 15:17:55.567 +05:30 [DBG] Hosting starting
+2025-10-17 15:17:55.618 +05:30 [INF] User profile is available. Using 'C:\Users\Kiran.B\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-17 15:17:55.626 +05:30 [DBG] Reading data from file 'C:\Users\Kiran.B\AppData\Local\ASP.NET\DataProtection-Keys\key-5484f942-d979-4fc3-823e-f991528de69d.xml'.
+2025-10-17 15:17:55.637 +05:30 [DBG] Found key {5484f942-d979-4fc3-823e-f991528de69d}.
+2025-10-17 15:17:55.652 +05:30 [DBG] Considering key {5484f942-d979-4fc3-823e-f991528de69d} with expiration date 2025-11-19 07:00:22Z as default key.
+2025-10-17 15:17:55.658 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-17 15:17:55.663 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2025-10-17 15:17:55.666 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-17 15:17:55.673 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-17 15:17:55.677 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-17 15:17:55.681 +05:30 [DBG] Using key {5484f942-d979-4fc3-823e-f991528de69d} as the default key.
+2025-10-17 15:17:55.684 +05:30 [DBG] Key ring with default key {5484f942-d979-4fc3-823e-f991528de69d} was loaded during application startup.
+2025-10-17 15:17:55.876 +05:30 [INF] Now listening on: http://localhost:5159
+2025-10-17 15:17:55.879 +05:30 [DBG] Loaded hosting startup assembly NoticeBoardAPI
+2025-10-17 15:17:55.881 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-17 15:17:55.883 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-17 15:17:55.886 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-17 15:17:55.887 +05:30 [INF] Hosting environment: Development
+2025-10-17 15:17:55.889 +05:30 [INF] Content root path: C:\Users\Kiran.B\Desktop\Training 2025\DotNET Core\NoticeBoardAPI
+2025-10-17 15:17:55.891 +05:30 [DBG] Hosting started
+2025-10-17 15:17:55.972 +05:30 [DBG] Connection id "0HNGDC8VR2BQV" accepted.
+2025-10-17 15:17:55.976 +05:30 [DBG] Connection id "0HNGDC8VR2BQV" started.
+2025-10-17 15:17:55.994 +05:30 [DBG] Connection id "0HNGDC8VR2BR0" accepted.
+2025-10-17 15:17:56.020 +05:30 [DBG] Connection id "0HNGDC8VR2BR0" started.
+2025-10-17 15:17:56.951 +05:30 [DBG] Connection id "0HNGDC8VR2BR1" accepted.
+2025-10-17 15:17:56.964 +05:30 [DBG] Connection id "0HNGDC8VR2BR1" started.
+2025-10-17 15:17:56.979 +05:30 [DBG] Connection id "0HNGDC8VR2BR2" accepted.
+2025-10-17 15:17:56.999 +05:30 [DBG] Connection id "0HNGDC8VR2BR2" started.
+2025-10-17 15:17:57.130 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - -
+2025-10-17 15:17:57.167 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-17 15:17:57.193 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-17 15:17:57.212 +05:30 [DBG] Request did not match any endpoints
+2025-10-17 15:17:57.400 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-17 15:17:57.619 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-17 15:17:57.626 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/_framework/aspnetcore-browser-refresh.js - -
+2025-10-17 15:17:57.626 +05:30 [DBG] Connection id "0HNGDC8VR2BR3" accepted.
+2025-10-17 15:17:57.640 +05:30 [DBG] Connection id "0HNGDC8VR2BR2" completed keep alive response.
+2025-10-17 15:17:57.646 +05:30 [DBG] Connection id "0HNGDC8VR2BR3" started.
+2025-10-17 15:17:57.647 +05:30 [DBG] Connection id "0HNGDC8VR2BR1" completed keep alive response.
+2025-10-17 15:17:57.651 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - - - 200 - text/html;charset=utf-8 524.9550ms
+2025-10-17 15:17:57.652 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/_vs/browserLink - -
+2025-10-17 15:17:57.656 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 30.1954ms
+2025-10-17 15:17:57.905 +05:30 [DBG] Connection id "0HNGDC8VR2BR3" completed keep alive response.
+2025-10-17 15:17:57.909 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 256.8962ms
+2025-10-17 15:17:57.955 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - -
+2025-10-17 15:17:57.962 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-17 15:17:57.966 +05:30 [DBG] Request did not match any endpoints
+2025-10-17 15:17:58.117 +05:30 [DBG] Connection id "0HNGDC8VR2BR3" completed keep alive response.
+2025-10-17 15:17:58.120 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.8312ms
+2025-10-17 15:17:58.221 +05:30 [DBG] Connection id "0HNGDC8VR2BR2" received FIN.
+2025-10-17 15:17:58.221 +05:30 [DBG] Connection id "0HNGDC8VR2BR3" received FIN.
+2025-10-17 15:17:58.226 +05:30 [DBG] Connection id "0HNGDC8VR2BR2" sending FIN because: "The client closed the connection."
+2025-10-17 15:17:58.221 +05:30 [DBG] Connection id "0HNGDC8VR2BR1" received FIN.
+2025-10-17 15:17:58.227 +05:30 [DBG] Connection id "0HNGDC8VR2BR3" disconnecting.
+2025-10-17 15:17:58.245 +05:30 [DBG] Connection id "0HNGDC8VR2BR2" disconnecting.
+2025-10-17 15:17:58.246 +05:30 [DBG] Connection id "0HNGDC8VR2BR1" sending FIN because: "The client closed the connection."
+2025-10-17 15:17:58.248 +05:30 [DBG] Connection id "0HNGDC8VR2BR3" sending FIN because: "The client closed the connection."
+2025-10-17 15:17:58.251 +05:30 [DBG] Connection id "0HNGDC8VR2BR2" stopped.
+2025-10-17 15:17:58.253 +05:30 [DBG] Connection id "0HNGDC8VR2BR1" disconnecting.
+2025-10-17 15:17:58.256 +05:30 [DBG] Connection id "0HNGDC8VR2BR3" stopped.
+2025-10-17 15:17:58.261 +05:30 [DBG] Connection id "0HNGDC8VR2BR1" stopped.
