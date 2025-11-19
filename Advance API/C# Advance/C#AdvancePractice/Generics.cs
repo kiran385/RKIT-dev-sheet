@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace CsharpAdvancePractice
+﻿namespace CsharpAdvancePractice
 {
+    /// <summary>
+    /// Class containing example of generic method
+    /// </summary>
     public partial class GenericsClass
     {
+        /// <summary>
+        /// Static method calling other methods
+        /// </summary>
         public static void GenericsDemo()
         {
             Console.WriteLine(CompareValues(10, 20));

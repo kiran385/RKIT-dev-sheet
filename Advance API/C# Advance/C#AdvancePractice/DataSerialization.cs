@@ -1,16 +1,25 @@
 ﻿using System.Xml.Serialization;
 using System.Text.Json;
-using System.IO;
 
 namespace CsharpAdvancePractice
 {
+    /// <summary>
+    /// Class for Person
+    /// </summary>
     public class Person
     {
         public string Name { get; set; }
         public int Age { get; set; }
     }
+
+    /// <summary>
+    /// Class containing data serialization demo
+    /// </summary>
     internal class DataSerialization
     {
+        /// <summary>
+        /// Method containing data serialization demo
+        /// </summary>
         public static void DataSerializationDemo()
         {
             Person person = new Person();

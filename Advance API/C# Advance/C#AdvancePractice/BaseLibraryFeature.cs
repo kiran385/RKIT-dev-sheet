@@ -1,5 +1,9 @@
 ﻿namespace CsharpAdvancePractice
 {
+    /// <summary>
+    /// Class inherited from List class
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class CustomList<T> : List<T>
     {
         private int _size;
@@ -52,8 +56,14 @@
         }
     }
 
+    /// <summary>
+    /// Class containing BaseLibraryFeatureDemo method
+    /// </summary>
     internal class BaseLibraryFeature
     {
+        /// <summary>
+        /// Method shows base library features demo
+        /// </summary>
         public static void BaseLibraryFeatureDemo()
         {
             CustomList<int> list = new CustomList<int>(5);

@@ -1,7 +1,13 @@
 ﻿namespace CsharpAdvancePractice
 {
+    /// <summary>
+    /// Class containing extension methods
+    /// </summary>
     internal static class ExtensionMethods
     {
+        /// <summary>
+        /// Method for extension method demo
+        /// </summary>
         public static void ExtensionMethodsDemo()
         {
             int a = 15, b = 20;

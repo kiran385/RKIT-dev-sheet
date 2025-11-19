@@ -4,8 +4,14 @@ using System.Linq;
 
 namespace CsharpAdvancePractice
 {
+    /// <summary>
+    /// Class containing LINQ demo
+    /// </summary>
     internal class LINQDemo
     {
+        /// <summary>
+        /// Employee data
+        /// </summary>
         static List<Employee> employeeList = new List<Employee>
         {
             new Employee { EmployeeId = 101, EmployeeName = "Ajay", EmployeeAge = 20, Salary = 25000, DepartmentId = 3 },
@@ -15,6 +21,9 @@ namespace CsharpAdvancePractice
             new Employee { EmployeeId = 105, EmployeeName = "Jay", EmployeeAge = 22, Salary = 26000, DepartmentId = 3 }
         };
 
+        /// <summary>
+        /// Department data
+        /// </summary>
         static List<Department> departmentList = new List<Department>
         {
             new Department { DepartmentId = 1, DepartmentName = "HR"},
@@ -22,6 +31,10 @@ namespace CsharpAdvancePractice
             new Department { DepartmentId = 3, DepartmentName = "Designer"},
             new Department { DepartmentId = 4, DepartmentName = "Support Staff"},
         };
+
+        /// <summary>
+        /// Method containing different LINQ methods demo
+        /// </summary>
         public static void MyLINQDemo()
         {
             //Console.WriteLine("\nFilter Methods\n");

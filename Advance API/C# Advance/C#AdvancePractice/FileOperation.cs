@@ -3,8 +3,14 @@ using System.IO;
 
 namespace CsharpAdvancePractice
 {
+    /// <summary>
+    /// Class containing File Operations demo
+    /// </summary>
     internal class FileOperation
     {
+        /// <summary>
+        /// Method containing all File operations
+        /// </summary>
         public static void FileOperationDemo()
         {
             string filePath = "demo.txt";
@@ -77,7 +83,7 @@ namespace CsharpAdvancePractice
                         case "Create":
                             try
                             {
-                                File.Create(filePath);
+                                using(var fs = File.Create(filePath)) { }
                                 Console.WriteLine("File.Create executed: Created demo.txt");
                             }
                             catch(Exception e)
@@ -272,7 +278,7 @@ namespace CsharpAdvancePractice
                             File.SetLastWriteTime(replacedPath, DateTime.Now);
                             File.SetLastWriteTimeUtc(replacedPath, DateTime.UtcNow);
 
-                            Console.WriteLine($"File.Set*Time and SetAttributes executed on {replacedPath}");
+                            Console.WriteLine($"File.SetTime and SetAttributes executed on {replacedPath}");
                             break;
 
                         case "Delete":

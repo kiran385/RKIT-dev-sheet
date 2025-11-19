@@ -1,7 +1,13 @@
 ﻿namespace CsharpAdvancePractice
 {
+    /// <summary>
+    /// Class containing dynamic type demo method
+    /// </summary>
     internal class DynamicType
     {
+        /// <summary>
+        /// Method containing dynamic type demo
+        /// </summary>
         public static void DynamicTypeDemo()
         {
             dynamic variable;

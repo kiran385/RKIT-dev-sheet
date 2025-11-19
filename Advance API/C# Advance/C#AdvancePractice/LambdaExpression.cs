@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CsharpAdvancePractice
+﻿namespace CsharpAdvancePractice
 {
+    /// <summary>
+    /// Class containing LambdaExpressionDemo method
+    /// </summary>
     internal class LambdaExpression
     {
+        /// <summary>
+        /// Method for lambda expression demo
+        /// </summary>
         public static void LambdaExpressionDemo()
         {
             List<int> list = new List<int>() { 1, 2, 3, 4, 5 };

@@ -3,8 +3,14 @@ using System.Text;
 
 namespace CsharpAdvancePractice
 {
+    /// <summary>
+    /// Containing cryptographic methods
+    /// </summary>
     public class Cryptography
     {
+        /// <summary>
+        /// Containing cryptographic methods demo
+        /// </summary>
         public static void CryptographyDemo()
         {
             Console.Write("Enter Text: ");

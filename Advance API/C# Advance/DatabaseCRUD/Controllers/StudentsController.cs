@@ -1,9 +1,7 @@
 ﻿using DatabaseCRUD.BAL;
 using DatabaseCRUD.Models;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace DatabaseCRUD.Controllers

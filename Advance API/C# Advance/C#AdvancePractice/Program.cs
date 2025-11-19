@@ -1,7 +1,13 @@
 ﻿namespace CsharpAdvancePractice
 {
+    /// <summary>
+    /// Class containing Main method
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Main method - Staring point of program
+        /// </summary>
         public static void Main()
         {
             //TypesOfClass.TypesOfClassDemo();

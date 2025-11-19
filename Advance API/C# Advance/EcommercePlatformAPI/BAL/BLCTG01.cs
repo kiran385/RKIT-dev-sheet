@@ -1,14 +1,10 @@
 ﻿using EcommercePlatformAPI.MAL;
 using EcommercePlatformAPI.MAL.DTO;
 using EcommercePlatformAPI.MAL.POCO;
-using ServiceStack;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Security.Cryptography;
 using System.Web;
 
 namespace EcommercePlatformAPI.BAL
