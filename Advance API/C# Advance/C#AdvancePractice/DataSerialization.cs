@@ -30,8 +30,27 @@ namespace CsharpAdvancePractice
             Console.WriteLine("JSON Serialization: "+ jsonString);
 
             Person jsonContent = JsonSerializer.Deserialize<Person>(jsonString);
-            Console.WriteLine("JSON Deserialization: "+jsonContent);
+            Console.WriteLine("\nJSON Deserialization: "+jsonContent);
 
+
+            // Serialization of List of object
+            List<Person> list = new List<Person>
+            {
+                new Person{Name = "Ajay", Age = 21},
+                new Person{Name = "Jay", Age = 22}
+            };
+
+            string jsonStringList = JsonSerializer.Serialize(list, new JsonSerializerOptions
+            {
+                WriteIndented = true
+            });
+            Console.WriteLine("\nJSON Serialization of object list: " + jsonStringList);
+
+            List<Person> jsonContentList = JsonSerializer.Deserialize<List<Person>>(jsonStringList);
+            Console.WriteLine("\nJSON Deserialization of object list: " + string.Join('|', jsonContentList));
+
+
+            // XML serialization
             string fileName = "person.xml";
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Person));
             using StreamWriter writer = new StreamWriter(fileName);

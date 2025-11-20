@@ -308,6 +308,9 @@ namespace CsharpAdvancePractice
             File.Delete(copyPath);
             File.Delete(replacedPath);
             File.Delete(movedPath);
+            File.Delete("lines.txt");
+            File.Delete("text.txt");
+            File.Delete("bytes.bin");
         }
     }
 }
