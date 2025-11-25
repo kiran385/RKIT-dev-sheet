@@ -1,12 +1,10 @@
-﻿using Mysqlx.Crud;
-using NoticeBoardAPI.BAL.Interface;
+﻿using NoticeBoardAPI.BAL.Interface;
 using NoticeBoardAPI.MAL;
 using NoticeBoardAPI.MAL.DTO;
 using NoticeBoardAPI.MAL.POCO;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
 using System.Data;
-using System.Security.Cryptography;
 
 namespace NoticeBoardAPI.BAL.Service
 {

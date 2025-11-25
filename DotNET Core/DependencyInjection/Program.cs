@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Registering services with by using extension method
+// Registering services by using extension method
 builder.Services.MyServices();
 
 

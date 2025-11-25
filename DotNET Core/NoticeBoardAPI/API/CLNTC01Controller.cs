@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NoticeBoardAPI.BAL.Interface;
-using NoticeBoardAPI.BAL.Service;
 using NoticeBoardAPI.MAL;
 using NoticeBoardAPI.MAL.DTO;
 
