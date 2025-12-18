@@ -1,0 +1,17 @@
+﻿.dx-textbox.dx-state-active {
+    border-color: #ff5722 !important;
+    box-shadow: 0 0 4px #ff5722;
+}
+
+.dx-textbox.dx-state-hover {
+    border-color: #007bff !important;
+    box-shadow: 0 0 4px #007bff;
+}
+
+.customCss {
+    border-color: #ff5722 !important;
+}
+
+#customId{
+    border: 1px solid green;
+}

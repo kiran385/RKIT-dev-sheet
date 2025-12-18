@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!-- jQuery import -->
+    <script src="../Scripts/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme (v23.1.3) -->
+    <link rel="stylesheet" href="../Content/dx.dark.css">
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/23.1.3/css/dx.dark.css" rel="stylesheet">-->
+    
+    <link href="textBoxAllOptions.css" rel="stylesheet">
+
+    <!-- DevExtreme libraries (reference only one of them) -->
+    <script src="../Scripts/dx.all.js"></script>
+
+</head>
+<body class="dx-viewport">
+    <h1>TextBox</h1>
+    <div>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th width="20%">Options</th>
+                    <th width="40%">Description</th>
+                    <th width="40%">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>accessKey</td>
+                    <td>Specifies the shortcut key that sets focus on the UI component.</td>
+                    <td>
+                        <div id="accessKey"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>activeStateEnabled</td>
+                    <td>Specifies whether the UI component changes its visual state as a result of user interaction.</td>
+                    <td>
+                        <div id="activeStateEnabled"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>buttons</td>
+                    <td>Allows you to add custom buttons to the input text field.</td>
+                    <td>
+                        <div id="buttons"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>disabled</td>
+                    <td>Specifies whether the UI component responds to user interaction.</td>
+                    <td>
+                        <div id="disabled"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>elementAttr</td>
+                    <td>Specifies the global attributes to be attached to the UI component's container element.</td>
+                    <td>
+                        <div id="elementAttr"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>focusStateEnabled</td>
+                    <td>Specifies whether the UI component can be focused using keyboard navigation.</td>
+                    <td>
+                        <div id="focusStateEnabled"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Specifies the UI component's height.</td>
+                    <td>
+                        <div id="height"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>hint</td>
+                    <td>Specifies text for a hint that appears when a user pauses on the UI component.</td>
+                    <td>
+                        <div id="hint"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>hoverStateEnabled</td>
+                    <td>Specifies whether the UI component changes its state(visual hover styles) when a user pauses on it.</td>
+                    <td>
+                        <div id="hoverStateEnabled"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>inputAttr</td>
+                    <td>Specifies the attributes to be passed on to the underlying HTML element.</td>
+                    <td>
+                        <div id="inputAttr"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>isValid</td>
+                    <td>Specifies or indicates whether the editor's value is valid.</td>
+                    <td>
+                        <div id="isValid"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>label</td>
+                    <td>Specifies a text string used to annotate the editor's value.</td>
+                    <td>
+                        <div id="label"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>labelMode</td>
+                    <td>Specifies the label's display mode(static, floating, hidden)</td>
+                    <td>
+                        <div id="labelMode"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>mask</td>
+                    <td>The editor mask that specifies the custom format of the entered string.</td>
+                    <td>
+                        <div id="mask"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>maskChar</td>
+                    <td>Specifies a mask placeholder. A single character is recommended.</td>
+                    <td>
+                        <div id="maskChar"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>maskInvalidMessage</td>
+                    <td>A message displayed when the entered text does not match the specified pattern.</td>
+                    <td>
+                        <div id="maskInvalidMessage"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>maskRules</td>
+                    <td>Specifies custom mask rules.</td>
+                    <td>
+                        <div id="maskRules"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>maxLength</td>
+                    <td>Specifies the maximum number of characters you can enter into the textbox.</td>
+                    <td>
+                        <div id="maxLength"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>mode</td>
+                    <td>The "mode" attribute value of the actual HTML input element representing the text box(password, search)</td>
+                    <td>
+                        <div id="mode"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>The value to be assigned to the name attribute of the underlying HTML element.</td>
+                    <td>
+                        <div id="name"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onChange</td>
+                    <td>A function that is executed when the UI component loses focus after the text field's content was changed using the keyboard.</td>
+                    <td>
+                        <div id="onChange"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onContentReady</td>
+                    <td>A function that is executed when the UI component is rendered and each time the component is repainted.</td>
+                    <td>
+                        <div id="onContentReady"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onCopy</td>
+                    <td>A function that is executed when the UI component's input has been copied.</td>
+                    <td>
+                        <div id="onCopy"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onCut</td>
+                    <td>A function that is executed when the UI component's input has been cut.</td>
+                    <td>
+                        <div id="onCut"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onDisposing</td>
+                    <td>A function that is executed before the UI component is disposed of.</td>
+                    <td>
+                        <div id="onDisposing"></div>
+                        <div id="removeBtn"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onEnterKey</td>
+                    <td>A function that is executed when the Enter key has been pressed while the UI component is focused.</td>
+                    <td>
+                        <div id="onEnterKey"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onFocusIn</td>
+                    <td>A function that is executed when the UI component gets focus.</td>
+                    <td>
+                        <div id="onFocusIn"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onFocusOut</td>
+                    <td>A function that is executed when the UI component loses focus.</td>
+                    <td>
+                        <div id="onFocusOut"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onInitialized</td>
+                    <td>A function used in JavaScript frameworks to save the UI component instance.</td>
+                    <td>
+                        <div id="onInitialized"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onInput</td>
+                    <td>A function that is executed each time the UI component's input is changed while the UI component is focused.</td>
+                    <td>
+                        <div id="onInput"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onKeyDown</td>
+                    <td>A function that is executed when a user is pressing a key on the keyboard.</td>
+                    <td>
+                        <div id="onKeyDown"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onKeyUp</td>
+                    <td>A function that is executed when a user releases a key on the keyboard.</td>
+                    <td>
+                        <div id="onKeyUp"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onOptionChanged</td>
+                    <td>A function that is executed after a UI component property is changed.</td>
+                    <td>
+                        <div id="onOptionChanged"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onPaste</td>
+                    <td>A function that is executed when the UI component's input has been pasted.</td>
+                    <td>
+                        <div id="onPaste"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>onValueChanged</td>
+                    <td>A function that is executed after the UI component's value is changed.</td>
+                    <td>
+                        <div id="onValueChanged"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>placeholder</td>
+                    <td>Specifies a text string displayed when the editor's value is empty.</td>
+                    <td>
+                        <div id="placeholder"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>readOnly</td>
+                    <td>Specifies whether the editor is read-only.</td>
+                    <td>
+                        <div id="readOnly"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>rtlEnabled</td>
+                    <td>Switches the UI component to a right-to-left representation.</td>
+                    <td>
+                        <div id="rtlEnabled"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>showClearButton</td>
+                    <td>Specifies whether to display the Clear button in the UI component.</td>
+                    <td>
+                        <div id="showClearButton"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>showMaskMode</td>
+                    <td>Specifies when the UI component shows the mask. Applies only if useMaskedValue is true.</td>
+                    <td>
+                        <div id="showMaskMode"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>spellcheck</td>
+                    <td>Specifies whether or not the UI component checks the inner text for spelling mistakes.</td>
+                    <td>
+                        <div id="spellcheck"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>stylingMode</td>
+                    <td>Specifies how the UI component's text field is styled(outlined, underlined, filled)</td>
+                    <td>
+                        <div id="stylingMode"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>tabIndex</td>
+                    <td>Specifies the number of the element when the Tab key is used for navigating.</td>
+                    <td>
+                        <div id="tabIndex"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>text</td>
+                    <td>The read-only property that holds the text displayed by the UI component input element.</td>
+                    <td>
+                        <div id="text"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>useMaskedValue</td>
+                    <td>Specifies whether the value should contain mask characters or not.</td>
+                    <td>
+                        <div id="useMaskedValue"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>validationError</td>
+                    <td>Information on the broken validation rule. Contains the first item from the validationErrors array.</td>
+                    <td>
+                        <div id="validationError"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>validationErrors</td>
+                    <td>An array of the validation rules that failed.</td>
+                    <td>
+                        <div id="validationErrors"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>validationMessageMode</td>
+                    <td>Specifies how the message about the validation rules that are not satisfied by this editor's value is displayed.</td>
+                    <td>
+                        <div id="validationMessageMode"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>validationMessagePosition</td>
+                    <td>Specifies the position of a validation message relative to the component. The validation message describes the validation rules that this component's value does not satisfy.</td>
+                    <td>
+                        <div id="validationMessagePosition"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>validationStatus</td>
+                    <td>Indicates or specifies the current validation status(pending, valid, invalid)</td>
+                    <td>
+                        <div id="validationStatus"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>Specifies a value the UI component displays.</td>
+                    <td>
+                        <div id="value"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>valueChangeEvent</td>
+                    <td>Specifies the DOM events after which the UI component's value should be updated(keyup, blur, change, input, and focusout)</td>
+                    <td>
+                        <div id="valueChangeEvent"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>visible</td>
+                    <td>Specifies whether the UI component is visible.</td>
+                    <td>
+                        <div id="visible"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>Specifies the UI component's width.</td>
+                    <td>
+                        <div id="width"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="textBoxAllOptions.js"></script>
+</body>
+</html>
