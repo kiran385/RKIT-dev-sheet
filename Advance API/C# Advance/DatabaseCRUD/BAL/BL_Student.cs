@@ -61,14 +61,15 @@ namespace DatabaseCRUD.BAL
         public Student GetStudentById(int id)
         {
             Student student = null;
-            string query = $"select * from student where id = {id}";
+            string query = "SELECT * FROM student WHERE id = @Id";
 
-            using(MySqlConnection connection = new MySqlConnection(connectionString))
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    using(MySqlDataReader reader = command.ExecuteReader())
+                    command.Parameters.AddWithValue("@Id", id);
+                    using (MySqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
@@ -93,7 +94,7 @@ namespace DatabaseCRUD.BAL
         /// <returns>True if data added else false</returns>
         public bool AddStudent(Student student)
         {
-            string query = $"insert into student(id, name, cgpa, admission_year) values('{student.Id}', '{student.Name}', '{student.CGPA}', '{student.AdmissionYear}')";
+            string query = @"INSERT INTO student (id, name, cgpa, admission_year) VALUES (@Id, @Name, @CGPA, @AdmissionYear)";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -101,6 +102,10 @@ namespace DatabaseCRUD.BAL
                 int rowsAffected;
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
+                    command.Parameters.AddWithValue("@Id", student.Id);
+                    command.Parameters.AddWithValue("@Name", student.Name);
+                    command.Parameters.AddWithValue("@CGPA", student.CGPA);
+                    command.Parameters.AddWithValue("@AdmissionYear", student.AdmissionYear);
                     rowsAffected = command.ExecuteNonQuery();
                 }
                 if (rowsAffected > 0)
@@ -119,14 +124,18 @@ namespace DatabaseCRUD.BAL
         /// <returns>True if data updated else false</returns>
         public bool UpdateStudent(int id, Student student)
         {
-            string query = $"update student set id = '{student.Id}', name = '{student.Name}', cgpa = '{student.CGPA}', admission_year = {student.AdmissionYear} where id = {id}";
+            string query = @"UPDATE student SET name = @Name,cgpa = @CGPA,admission_year = @AdmissionYear WHERE id = @Id";
 
-            using(MySqlConnection connection = new MySqlConnection(connectionString))
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
                 int rowsAffected;
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
+                    command.Parameters.AddWithValue("@Name", student.Name);
+                    command.Parameters.AddWithValue("@CGPA", student.CGPA);
+                    command.Parameters.AddWithValue("@AdmissionYear", student.AdmissionYear);
+                    command.Parameters.AddWithValue("@Id", id);
                     rowsAffected = command.ExecuteNonQuery();
                 }
                 if (rowsAffected > 0)
@@ -144,7 +153,7 @@ namespace DatabaseCRUD.BAL
         /// <returns>True if data deleted else false</returns>
         public bool DeleteStudent(int id)
         {
-            string query = $"delete from student where id = {id}";
+            string query = "DELETE FROM student WHERE id = @Id";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -152,6 +161,7 @@ namespace DatabaseCRUD.BAL
                 int rowsAffected;
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
+                    command.Parameters.AddWithValue("@Id", id);
                     rowsAffected = command.ExecuteNonQuery();
                 }
                 if (rowsAffected > 0)
